@@ -1,0 +1,35 @@
+﻿TRABO approved financial tables,Report,d8bdff66d36d49d9a0cc4c73caeb04fb,Revision,2
+Snapshot,f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96,Period,2026-11,Amount unit,INR rupees
+Approved by,synthetic-reviewer@trabo.local,Approved at,2026-11-21T20:05:41.180058+00:00
+Payload SHA-256,4f6ccd8d61359811c93393264ad8e8f363181de23f5bd58c8fa0439cb7ac85fb
+Account,Department,Comparison INR,Actual INR,Variance INR,Variance percent,Evidence fact ID
+Cloud infrastructure,Engineering,200000,305000,105000,52.5,42a5bdd6f1030a9d6c53c85f3470b07c79abc52370a50394d2b63ef02c11e2da
+Payroll,People,600000,660000,60000,10.0,01a5742f601b69d3e4662093a8d8734bba88260f0c1de9d062f8a6ee8bcd1c60
+Marketing campaigns,Marketing,150000,175000,25000,16.67,4c47d1ad39b9472ceb1f246358d4deb7e4640b2258a61534fa9e560218f6347d
+Other operating costs,Operations,50000,40000,-10000,-20.0,ea2f13133d84f441baeb1718f0e6542af3c0771a4cba8cce280f2ca7a1c1b080
+Total,,1000000,1180000,180000,18.0
+
+Bridge contribution,Evidence state,Contribution INR,Driver ID
+Usage,supported,50000,4908f306e57c4f9e82e7ee7d94e340190ccb9876a9ef8bfb08338c2cfd0c95c6
+Rate,supported,55000,10dfc5c89f96ee1fb16e228760154f59f7f53defd7f44b278448ca72b2f355bd
+Supported campaign,supported,15000,c3881c072bc7a33af453e8f29fa23538d1946f3de34beed00d8989f11dbd5d98
+Unexplained,unknown,10000,5b4d5ffcfe6fd9a6f8b40668c635a5e8f0469303cfcb95da2806a2d89e31ae7f
+Payroll,supported,60000,6e898a3f4728d761504c2f06571bfa43f963e3385e2a490cfd65fc0a7110a96b
+
+Selected scenario,Synthetic golden plan,Assumptions hash,eb06dc5d3dfd16e42ca256e51387793d7b2d794f91c9cd51ff9672596be6adc0
+Month,Baseline closing INR,Scenario closing INR,Vendor saving INR,Hiring saving INR,Action cost INR
+2026-12,5600000,5600000,0,0,0
+2027-01,5200000,5300000,100000,0,0
+2027-02,4800000,5100000,100000,100000,0
+2027-03,4400000,4900000,100000,100000,0
+2027-04,4000000,4700000,100000,100000,0
+2027-05,3600000,4500000,100000,100000,0
+2027-06,3200000,4300000,100000,100000,0
+2027-07,2800000,4100000,100000,100000,0
+2027-08,2400000,3900000,100000,100000,0
+2027-09,2000000,3700000,100000,100000,0
+2027-10,1600000,3500000,100000,100000,0
+2027-11,1200000,3300000,100000,100000,0
+
+Proposed action,Owner,Evidence reference
+Review the supporting records and document any remaining explanation.,Synthetic finance review team,5b4d5ffcfe6fd9a6f8b40668c635a5e8f0469303cfcb95da2806a2d89e31ae7f

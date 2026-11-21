@@ -31,7 +31,7 @@ async def lifespan(app):
             c.execute('INSERT INTO users VALUES(?,?,?,?)',(email,salt,password_hash(os.getenv('TRABO_PASSWORD','trabo-demo-2026'),salt),'demo'))
     yield
 
-app=FastAPI(title='TRABO · Phases 1 & 2',lifespan=lifespan)
+app=FastAPI(title='TRABO · Financial close, analysis, and reviewed reporting',lifespan=lifespan)
 
 def auth(request:Request):
     token=request.cookies.get('trabo_session','')
@@ -77,7 +77,9 @@ def logout(request:Request,response:Response):
     response.delete_cookie('trabo_session'); return {'ok':True}
 
 @app.get('/api/health')
-def health(): return {'status':'ok','service':'TRABO API'}
+def health():
+    beat=get('health','worker','_system')
+    return {'status':'ok','service':'TRABO API','worker':{'status':'ready' if beat and time.time()-beat['epoch']<20 else 'offline','last_seen':beat['seen_at'] if beat else None}}
 
 @app.get('/api/state')
 def state(user=Depends(auth)):
@@ -272,6 +274,8 @@ def reset(w=Depends(wid)):
 
 from phase2_api import router_for
 app.include_router(router_for(auth,wid))
+from phase3_api import router_for as reports_router
+app.include_router(reports_router(auth,wid))
 
 # Optional single-origin production serving after `npm run build`.
 from fastapi.staticfiles import StaticFiles

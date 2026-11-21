@@ -1,0 +1,536 @@
+{
+  "id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+  "created_at": "2026-11-21T20:05:40.316120+00:00",
+  "workspace": "demo",
+  "engine_version": "trabo-close-1.1",
+  "amount_unit": "INR paise",
+  "policy": {
+    "id": "demo",
+    "name": "Acme Technologies",
+    "entity": "ACME-IN",
+    "currency": "INR",
+    "period": "2026-11",
+    "budget_version": "FY27 Approved",
+    "basis": "accrual",
+    "amount_scale": "rupees",
+    "expense_sign": "positive",
+    "departments": [
+      "Engineering",
+      "People",
+      "Marketing",
+      "Operations"
+    ],
+    "accounts": [
+      "CLOUD",
+      "PAYROLL",
+      "MARKETING",
+      "OTHER"
+    ],
+    "aliases": {
+      "Engg": "Engineering"
+    }
+  },
+  "record_count": 122,
+  "totals": {
+    "budgets": {
+      "raw": 600000000,
+      "accepted": 600000000,
+      "quarantined": 0,
+      "rows": 24,
+      "quarantined_rows": 0
+    },
+    "actuals": {
+      "raw": 620684200,
+      "accepted": 620684200,
+      "quarantined": 0,
+      "rows": 24,
+      "quarantined_rows": 0
+    },
+    "invoices": {
+      "raw": 256272600,
+      "accepted": 256272600,
+      "quarantined": 0,
+      "rows": 18,
+      "quarantined_rows": 0
+    },
+    "allocations": {
+      "raw": 256272600,
+      "accepted": 256272600,
+      "quarantined": 0,
+      "rows": 18,
+      "quarantined_rows": 0
+    },
+    "headcount": {
+      "raw": 726000000,
+      "accepted": 726000000,
+      "quarantined": 0,
+      "rows": 12,
+      "quarantined_rows": 0
+    },
+    "units_rates": {
+      "raw": 0,
+      "accepted": 0,
+      "quarantined": 0,
+      "rows": 12,
+      "quarantined_rows": 0
+    },
+    "planned_positions": {
+      "raw": 10000000,
+      "accepted": 10000000,
+      "quarantined": 0,
+      "rows": 1,
+      "quarantined_rows": 0
+    },
+    "cash": {
+      "raw": 0,
+      "accepted": 0,
+      "quarantined": 0,
+      "rows": 12,
+      "quarantined_rows": 0
+    },
+    "obligations": {
+      "raw": 10000000,
+      "accepted": 10000000,
+      "quarantined": 0,
+      "rows": 1,
+      "quarantined_rows": 0
+    }
+  },
+  "reconciliation": {
+    "raw_equals_accepted_plus_quarantined": true,
+    "ledger": 620684200,
+    "matched_support": 256272600,
+    "labeled_residual": 364411600,
+    "enriched_ledger": 620684200
+  },
+  "warnings": [],
+  "issue_history": [],
+  "inputs": [
+    {
+      "hash": "a6856c54bdc82e127021326bfb542927e7322545090f29f95c6a284be1b04f35",
+      "name": "budgets.csv",
+      "mappings": [
+        {
+          "role": "budgets",
+          "columns": {
+            "month": "month",
+            "department": "department",
+            "account": "account",
+            "amount": "amount",
+            "budget_version": "budget_version",
+            "currency": "currency"
+          },
+          "scale": "rupees",
+          "sign": "positive",
+          "date_format": "ISO",
+          "wide_months": {}
+        }
+      ]
+    },
+    {
+      "hash": "89083ff9b209e00cc032b8183760ab87d274fbdbb539d8b7532e82b4f156e7de",
+      "name": "actuals.csv",
+      "mappings": [
+        {
+          "role": "actuals",
+          "columns": {
+            "journal_id": "journal_id",
+            "line_id": "line_id",
+            "date": "date",
+            "department": "department",
+            "account": "account",
+            "amount": "amount",
+            "currency": "currency",
+            "description": "description",
+            "vendor": "vendor"
+          },
+          "scale": "rupees",
+          "sign": "positive",
+          "date_format": "ISO",
+          "wide_months": {}
+        }
+      ]
+    },
+    {
+      "hash": "2986c1424d822914adca9b1d1660d20ae1cac1dee012a4ab62e94f882c2f3471",
+      "name": "invoices.csv",
+      "mappings": [
+        {
+          "role": "invoices",
+          "columns": {
+            "invoice_id": "invoice_id",
+            "date": "date",
+            "vendor": "vendor",
+            "amount": "amount",
+            "currency": "currency",
+            "description": "description",
+            "variance_amount": "variance_amount",
+            "variance_label": "variance_label",
+            "evidence_reviewed": "evidence_reviewed"
+          },
+          "scale": "rupees",
+          "sign": "positive",
+          "date_format": "ISO",
+          "wide_months": {}
+        }
+      ]
+    },
+    {
+      "hash": "95378f16aa235f65821efab7d2417a5393e63206845653dda68163125f1f96c8",
+      "name": "allocations.csv",
+      "mappings": [
+        {
+          "role": "allocations",
+          "columns": {
+            "invoice_id": "invoice_id",
+            "journal_id": "journal_id",
+            "line_id": "line_id",
+            "amount": "amount",
+            "currency": "currency"
+          },
+          "scale": "rupees",
+          "sign": "positive",
+          "date_format": "ISO",
+          "wide_months": {}
+        }
+      ]
+    },
+    {
+      "hash": "b38c908162a7d275bb9186db92b5ae0ec889ed558c8627b5e19bd5412f774cfe",
+      "name": "headcount.csv",
+      "mappings": [
+        {
+          "role": "headcount",
+          "columns": {
+            "employee_id": "employee_id",
+            "month": "month",
+            "department": "department",
+            "fte": "fte",
+            "amount": "amount",
+            "kind": "kind",
+            "currency": "currency"
+          },
+          "scale": "rupees",
+          "sign": "positive",
+          "date_format": "ISO",
+          "wide_months": {}
+        }
+      ]
+    },
+    {
+      "hash": "fa98be1fca6a556fee138c4338b99cbf40140cbefcd122f5d03a7453bf113119",
+      "name": "units_rates.csv",
+      "mappings": [
+        {
+          "role": "units_rates",
+          "columns": {
+            "month": "month",
+            "department": "department",
+            "account": "account",
+            "units": "units",
+            "rate": "rate",
+            "kind": "kind",
+            "currency": "currency",
+            "unit": "unit"
+          },
+          "scale": "rupees",
+          "sign": "positive",
+          "date_format": "ISO",
+          "wide_months": {}
+        }
+      ]
+    },
+    {
+      "hash": "87c4e7b917ea441a85b94ed788da50d972e9aa7ec665b6fa177222b282dc6db0",
+      "name": "planned_positions.csv",
+      "mappings": [
+        {
+          "role": "planned_positions",
+          "columns": {
+            "position_id": "position_id",
+            "department": "department",
+            "start_date": "start_date",
+            "amount": "amount",
+            "committed": "committed",
+            "currency": "currency"
+          },
+          "scale": "rupees",
+          "sign": "positive",
+          "date_format": "ISO",
+          "wide_months": {}
+        }
+      ]
+    },
+    {
+      "hash": "40b17c87e0ec3e2f69c8477dc88ea645331580300854f5589e76d928a9081250",
+      "name": "cash.csv",
+      "mappings": [
+        {
+          "role": "cash",
+          "columns": {
+            "month": "month",
+            "opening_cash": "opening_cash",
+            "receipts": "receipts",
+            "payments": "payments",
+            "currency": "currency",
+            "recurring_vendor": "recurring_vendor",
+            "existing_payroll": "existing_payroll",
+            "other_operating": "other_operating",
+            "taxes": "taxes",
+            "capex": "capex",
+            "debt_service": "debt_service",
+            "scheduled_invoices": "scheduled_invoices",
+            "planned_hires": "planned_hires",
+            "breakdown_reviewed": "breakdown_reviewed",
+            "vendor_cancellable": "vendor_cancellable"
+          },
+          "scale": "rupees",
+          "sign": "positive",
+          "date_format": "ISO",
+          "wide_months": {}
+        }
+      ]
+    },
+    {
+      "hash": "c014f5c9a3d3f141f2f5d694334490194e4c3f4f49ba6015eac9075b99ac8dcd",
+      "name": "obligations.csv",
+      "mappings": [
+        {
+          "role": "obligations",
+          "columns": {
+            "obligation_id": "obligation_id",
+            "date": "date",
+            "amount": "amount",
+            "category": "category",
+            "committed": "committed",
+            "currency": "currency"
+          },
+          "scale": "rupees",
+          "sign": "positive",
+          "date_format": "ISO",
+          "wide_months": {}
+        }
+      ]
+    }
+  ],
+  "corrections": [],
+  "correction_revisions": [],
+  "mapping_revisions": [
+    {
+      "id": "2d96f6d4e8a21e6e43d68bb1c6d8349d78a2d43604f8d2fba9a85ce3e87f64e5",
+      "upload_id": "35d7e17915e7a7835b646728",
+      "sheet": "CSV",
+      "mapping": {
+        "role": "budgets",
+        "columns": {
+          "month": "month",
+          "department": "department",
+          "account": "account",
+          "amount": "amount",
+          "budget_version": "budget_version",
+          "currency": "currency"
+        },
+        "scale": "rupees",
+        "sign": "positive",
+        "date_format": "ISO",
+        "wide_months": {}
+      },
+      "confirmed_at": "2026-11-21T20:05:39.932880+00:00",
+      "reviewer": "synthetic-acceptance-runner"
+    },
+    {
+      "id": "c3300c9379e6c73cb1138ceb61fae4f90c0f1d3645f4c69f305ba254c809f5a2",
+      "upload_id": "cc42192524c477b1ff5426e2",
+      "sheet": "CSV",
+      "mapping": {
+        "role": "actuals",
+        "columns": {
+          "journal_id": "journal_id",
+          "line_id": "line_id",
+          "date": "date",
+          "department": "department",
+          "account": "account",
+          "amount": "amount",
+          "currency": "currency",
+          "description": "description",
+          "vendor": "vendor"
+        },
+        "scale": "rupees",
+        "sign": "positive",
+        "date_format": "ISO",
+        "wide_months": {}
+      },
+      "confirmed_at": "2026-11-21T20:05:39.965603+00:00",
+      "reviewer": "synthetic-acceptance-runner"
+    },
+    {
+      "id": "1631d4d0ebe6739ad8934e1571218882b191aa25d3fc50757264579a51e68a89",
+      "upload_id": "c568f160857ebb439fa542c3",
+      "sheet": "CSV",
+      "mapping": {
+        "role": "invoices",
+        "columns": {
+          "invoice_id": "invoice_id",
+          "date": "date",
+          "vendor": "vendor",
+          "amount": "amount",
+          "currency": "currency",
+          "description": "description",
+          "variance_amount": "variance_amount",
+          "variance_label": "variance_label",
+          "evidence_reviewed": "evidence_reviewed"
+        },
+        "scale": "rupees",
+        "sign": "positive",
+        "date_format": "ISO",
+        "wide_months": {}
+      },
+      "confirmed_at": "2026-11-21T20:05:39.996565+00:00",
+      "reviewer": "synthetic-acceptance-runner"
+    },
+    {
+      "id": "5d8f2c34787192419d2c5be9176e2220fba46b5773a3d7ed1e8c8beb6a843d2b",
+      "upload_id": "c3607b8eb0588745db149943",
+      "sheet": "CSV",
+      "mapping": {
+        "role": "allocations",
+        "columns": {
+          "invoice_id": "invoice_id",
+          "journal_id": "journal_id",
+          "line_id": "line_id",
+          "amount": "amount",
+          "currency": "currency"
+        },
+        "scale": "rupees",
+        "sign": "positive",
+        "date_format": "ISO",
+        "wide_months": {}
+      },
+      "confirmed_at": "2026-11-21T20:05:40.019794+00:00",
+      "reviewer": "synthetic-acceptance-runner"
+    },
+    {
+      "id": "40307f3e83a4cfa4de94dc73a629de1fa9630a24bc68debee5d6efc09ed941e9",
+      "upload_id": "6a01a9cd779a0b5eb84fa9ec",
+      "sheet": "CSV",
+      "mapping": {
+        "role": "headcount",
+        "columns": {
+          "employee_id": "employee_id",
+          "month": "month",
+          "department": "department",
+          "fte": "fte",
+          "amount": "amount",
+          "kind": "kind",
+          "currency": "currency"
+        },
+        "scale": "rupees",
+        "sign": "positive",
+        "date_format": "ISO",
+        "wide_months": {}
+      },
+      "confirmed_at": "2026-11-21T20:05:40.053256+00:00",
+      "reviewer": "synthetic-acceptance-runner"
+    },
+    {
+      "id": "9e05f1565d3f387ae8dcd164fddadb64fd5e59da89b7fb8b8ea7ba840e4d0610",
+      "upload_id": "e963c102216fdb01bd935122",
+      "sheet": "CSV",
+      "mapping": {
+        "role": "units_rates",
+        "columns": {
+          "month": "month",
+          "department": "department",
+          "account": "account",
+          "units": "units",
+          "rate": "rate",
+          "kind": "kind",
+          "currency": "currency",
+          "unit": "unit"
+        },
+        "scale": "rupees",
+        "sign": "positive",
+        "date_format": "ISO",
+        "wide_months": {}
+      },
+      "confirmed_at": "2026-11-21T20:05:40.086534+00:00",
+      "reviewer": "synthetic-acceptance-runner"
+    },
+    {
+      "id": "3649504814d0a046ae730d36d699cbec68a59750b201aead1bdd3385063397f2",
+      "upload_id": "9810167a1ee295dd78dfaee3",
+      "sheet": "CSV",
+      "mapping": {
+        "role": "planned_positions",
+        "columns": {
+          "position_id": "position_id",
+          "department": "department",
+          "start_date": "start_date",
+          "amount": "amount",
+          "committed": "committed",
+          "currency": "currency"
+        },
+        "scale": "rupees",
+        "sign": "positive",
+        "date_format": "ISO",
+        "wide_months": {}
+      },
+      "confirmed_at": "2026-11-21T20:05:40.119878+00:00",
+      "reviewer": "synthetic-acceptance-runner"
+    },
+    {
+      "id": "c54a63b4229e63494203e78e99fe7e4bb14dcb1b83ac6de5dd3797893b591734",
+      "upload_id": "dc2527407ab64d27a9965c62",
+      "sheet": "CSV",
+      "mapping": {
+        "role": "cash",
+        "columns": {
+          "month": "month",
+          "opening_cash": "opening_cash",
+          "receipts": "receipts",
+          "payments": "payments",
+          "currency": "currency",
+          "recurring_vendor": "recurring_vendor",
+          "existing_payroll": "existing_payroll",
+          "other_operating": "other_operating",
+          "taxes": "taxes",
+          "capex": "capex",
+          "debt_service": "debt_service",
+          "scheduled_invoices": "scheduled_invoices",
+          "planned_hires": "planned_hires",
+          "breakdown_reviewed": "breakdown_reviewed",
+          "vendor_cancellable": "vendor_cancellable"
+        },
+        "scale": "rupees",
+        "sign": "positive",
+        "date_format": "ISO",
+        "wide_months": {}
+      },
+      "confirmed_at": "2026-11-21T20:05:40.154133+00:00",
+      "reviewer": "synthetic-acceptance-runner"
+    },
+    {
+      "id": "6fbefa01ade6414d97da2856f84952ed6ff8996fde7a482f4f3cabb52642abbd",
+      "upload_id": "e58ed701dd0c9718aa36cf01",
+      "sheet": "CSV",
+      "mapping": {
+        "role": "obligations",
+        "columns": {
+          "obligation_id": "obligation_id",
+          "date": "date",
+          "amount": "amount",
+          "category": "category",
+          "committed": "committed",
+          "currency": "currency"
+        },
+        "scale": "rupees",
+        "sign": "positive",
+        "date_format": "ISO",
+        "wide_months": {}
+      },
+      "confirmed_at": "2026-11-21T20:05:40.188042+00:00",
+      "reviewer": "synthetic-acceptance-runner"
+    }
+  ],
+  "confirmed_by": "synthetic-acceptance-runner"
+}

@@ -1,0 +1,13 @@
+{
+  "errors": [],
+  "mobileHorizontalOverflow": false,
+  "checks": [
+    "CSV collection upload",
+    "Mapping, planted issue resolution, true missing budget, and sealed close",
+    "Golden variance evidence and timing-aware saved scenario",
+    "Linked report claims, owner assignment, explicit human-review form, frozen PDF, stale blocking, identical historical export"
+  ],
+  "snapshot_id": "ced54427dd12dd552ef7b5c19348ff0b8a0ad64ff0f0b1e88edf0ee249c2f168",
+  "report_id": "4b799fb095a744b3be6329bfec42ee9f",
+  "approved_revision": 2
+}

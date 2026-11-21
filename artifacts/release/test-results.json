@@ -1,0 +1,37 @@
+{
+  "date_local": "2026-11-22",
+  "timezone": "Asia/Calcutta",
+  "backend": {
+    "command": ".venv/Scripts/python.exe -m pytest backend -q --basetemp=artifacts/pytest-release-final-v2 -p no:cacheprovider",
+    "passed": 37,
+    "failed": 0,
+    "duration_seconds": 58.96,
+    "warnings": [
+      "Third-party Starlette/AnyIO BlockingPortal deprecation"
+    ]
+  },
+  "frontend_build": {
+    "command": "npm run build",
+    "passed": true
+  },
+  "browser": {
+    "complete_recorded_flow": "passed after isolated draft reset; PDF download equals frozen API bytes",
+    "phase2": "passed",
+    "guide_and_refinement": "passed",
+    "page_errors": [],
+    "mobile_horizontal_overflow": false
+  },
+  "narrative_validator": {
+    "passed": 30,
+    "total": 30,
+    "live_model_comparison": "not run: Groq key is blank"
+  },
+  "healthchecks": {
+    "api": "Healthy",
+    "worker": "Healthy"
+  },
+  "containers": {
+    "status": "packaged; runtime not tested",
+    "reason": "Docker is not installed on this machine"
+  }
+}

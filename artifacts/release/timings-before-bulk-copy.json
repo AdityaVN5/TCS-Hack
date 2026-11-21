@@ -1,0 +1,52 @@
+{
+  "clock": "time.perf_counter",
+  "environment": "local demo machine",
+  "includes": "10k ingestion includes parse, persistence, mapping, validation and Parquet publication; warm uses a second isolated workspace in the same process. Narrative timing uses template mode.",
+  "operations": {
+    "dashboard_cold": {
+      "milliseconds": 150.15,
+      "target_milliseconds": 500,
+      "target_met": true
+    },
+    "dashboard_warm": {
+      "milliseconds": 7.5,
+      "target_milliseconds": 500,
+      "target_met": true
+    },
+    "scenario_cold": {
+      "milliseconds": 30.03,
+      "target_milliseconds": 300,
+      "target_met": true
+    },
+    "scenario_warm": {
+      "milliseconds": 30.57,
+      "target_milliseconds": 300,
+      "target_met": true
+    },
+    "narrative_template_cold": {
+      "milliseconds": 39.31,
+      "target_milliseconds": 20000,
+      "target_met": true
+    },
+    "approved_pdf_cold": {
+      "milliseconds": 74.83,
+      "target_milliseconds": 10000,
+      "target_met": true
+    },
+    "approved_pdf_warm": {
+      "milliseconds": 67.51,
+      "target_milliseconds": 10000,
+      "target_met": true
+    },
+    "ingest_10000_cold": {
+      "milliseconds": 33189.6,
+      "target_milliseconds": 10000,
+      "target_met": false
+    },
+    "ingest_10000_warm": {
+      "milliseconds": 32907.85,
+      "target_milliseconds": 10000,
+      "target_met": false
+    }
+  }
+}

@@ -1,0 +1,3045 @@
+{
+  "payload_hash": "4f6ccd8d61359811c93393264ad8e8f363181de23f5bd58c8fa0439cb7ac85fb",
+  "approved_payload": {
+    "report_id": "d8bdff66d36d49d9a0cc4c73caeb04fb",
+    "revision": 2,
+    "title": "TRABO · Synthetic acceptance report",
+    "rendered": {
+      "title": "Acme Technologies · Management report",
+      "period": "2026-11",
+      "sections": [
+        {
+          "key": "executive",
+          "title": "Executive overview",
+          "commentary": "",
+          "claims": [
+            {
+              "reference_id": "summary",
+              "text": "Actual expenses of INR 1,180,000.00 compare with INR 1,000,000.00 approved budget, a INR 180,000.00 adverse movement (18%).",
+              "evidence_state": "verified_arithmetic"
+            },
+            {
+              "reference_id": "coverage",
+              "text": "Supported explanation coverage is 95%: INR 190,000.00 of INR 200,000.00 in disjoint gross contributions.",
+              "evidence_state": "verified_arithmetic"
+            }
+          ]
+        },
+        {
+          "key": "comparison",
+          "title": "Budget versus actual",
+          "commentary": "",
+          "claims": [
+            {
+              "reference_id": "42a5bdd6f1030a9d6c53c85f3470b07c79abc52370a50394d2b63ef02c11e2da",
+              "text": "Cloud infrastructure (Engineering): INR 305,000.00 actual, INR 200,000.00 comparison; INR 105,000.00 adverse movement.",
+              "evidence_state": "verified_arithmetic"
+            },
+            {
+              "reference_id": "01a5742f601b69d3e4662093a8d8734bba88260f0c1de9d062f8a6ee8bcd1c60",
+              "text": "Payroll (People): INR 660,000.00 actual, INR 600,000.00 comparison; INR 60,000.00 adverse movement.",
+              "evidence_state": "verified_arithmetic"
+            },
+            {
+              "reference_id": "4c47d1ad39b9472ceb1f246358d4deb7e4640b2258a61534fa9e560218f6347d",
+              "text": "Marketing campaigns (Marketing): INR 175,000.00 actual, INR 150,000.00 comparison; INR 25,000.00 adverse movement.",
+              "evidence_state": "verified_arithmetic"
+            }
+          ]
+        },
+        {
+          "key": "movements",
+          "title": "Material movements",
+          "commentary": "",
+          "claims": [
+            {
+              "reference_id": "4908f306e57c4f9e82e7ee7d94e340190ccb9876a9ef8bfb08338c2cfd0c95c6",
+              "text": "Usage contributes INR 50,000.00 to the movement, supported by the linked calculation and source records.",
+              "evidence_state": "supported"
+            },
+            {
+              "reference_id": "10dfc5c89f96ee1fb16e228760154f59f7f53defd7f44b278448ca72b2f355bd",
+              "text": "Rate contributes INR 55,000.00 to the movement, supported by the linked calculation and source records.",
+              "evidence_state": "supported"
+            },
+            {
+              "reference_id": "c3881c072bc7a33af453e8f29fa23538d1946f3de34beed00d8989f11dbd5d98",
+              "text": "Supported campaign contributes INR 15,000.00 to the movement, supported by the linked calculation and source records.",
+              "evidence_state": "supported"
+            },
+            {
+              "reference_id": "6e898a3f4728d761504c2f06571bfa43f963e3385e2a490cfd65fc0a7110a96b",
+              "text": "Payroll contributes INR 60,000.00 to the movement, supported by the linked calculation and source records.",
+              "evidence_state": "supported"
+            }
+          ]
+        },
+        {
+          "key": "unknowns",
+          "title": "Unexplained amounts",
+          "commentary": "",
+          "claims": [
+            {
+              "reference_id": "unknown_total",
+              "text": "Gross unexplained movement is INR 10,000.00; the signed unexplained balance is INR 10,000.00. It remains open for investigation.",
+              "evidence_state": "unknown"
+            },
+            {
+              "reference_id": "5b4d5ffcfe6fd9a6f8b40668c635a5e8f0469303cfcb95da2806a2d89e31ae7f",
+              "text": "Unexplained: INR 10,000.00 remains unexplained. No business cause has been established.",
+              "evidence_state": "unknown"
+            }
+          ]
+        },
+        {
+          "key": "cash",
+          "title": "Cash and assumptions",
+          "commentary": "",
+          "claims": [
+            {
+              "reference_id": "cash_baseline",
+              "text": "Baseline closing cash is INR 1,200,000.00 at the end of the modeled horizon (2026-12 to 2027-11). This is a modeled outcome under the saved assumptions.",
+              "evidence_state": "modeled"
+            },
+            {
+              "reference_id": "1cfab6815392ff349d448d66d8f89aff8f65a1d249fe1995001482a6c9af27e2",
+              "text": "Selected scenario closing cash is INR 3,300,000.00 at the end of the modeled horizon (2026-12 to 2027-11). This is a modeled outcome under the saved assumptions.",
+              "evidence_state": "modeled"
+            },
+            {
+              "reference_id": "assumptions",
+              "text": "Cash projections depend on reviewed receipts and exclusive payment buckets. Vendor changes exclude commitments; hiring freezes apply only to eligible planned roles from their start dates. Modeled savings are not actual results.",
+              "evidence_state": "modeled"
+            }
+          ]
+        },
+        {
+          "key": "actions",
+          "title": "Proposed actions",
+          "commentary": "",
+          "claims": []
+        },
+        {
+          "key": "evidence",
+          "title": "Evidence appendix",
+          "commentary": "",
+          "claims": [
+            {
+              "reference_id": "scope",
+              "text": "Reporting period 2026-11; scope budget; approved budget FY27 Approved; source snapshot f38f581102a0. All amounts are reported in INR; stored monetary facts use integer paise.",
+              "evidence_state": "verified_arithmetic"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "reference_id": "5b4d5ffcfe6fd9a6f8b40668c635a5e8f0469303cfcb95da2806a2d89e31ae7f",
+          "instruction": "Review the supporting records and document any remaining explanation.",
+          "owner": "Synthetic finance review team"
+        }
+      ],
+      "questions": [
+        {
+          "reference_id": "unknown_total",
+          "text": "What additional source support is needed to explain the remaining movement?"
+        }
+      ]
+    },
+    "packet": {
+      "contract_version": "trabo-report-packet-1",
+      "snapshot_id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+      "company": "Acme Technologies",
+      "entity": "ACME-IN",
+      "period": "2026-11",
+      "scope": "budget",
+      "amount_unit": "INR paise",
+      "budget_version": "FY27 Approved",
+      "policy": {
+        "id": "demo",
+        "name": "Acme Technologies",
+        "entity": "ACME-IN",
+        "currency": "INR",
+        "period": "2026-11",
+        "budget_version": "FY27 Approved",
+        "basis": "accrual",
+        "amount_scale": "rupees",
+        "expense_sign": "positive",
+        "departments": [
+          "Engineering",
+          "People",
+          "Marketing",
+          "Operations"
+        ],
+        "accounts": [
+          "CLOUD",
+          "PAYROLL",
+          "MARKETING",
+          "OTHER"
+        ],
+        "aliases": {
+          "Engg": "Engineering"
+        }
+      },
+      "totals": {
+        "actual_minor": 118000000,
+        "budget_minor": 100000000,
+        "variance_minor": 18000000,
+        "percentage": 18.0,
+        "unbudgeted": false,
+        "unexplained_minor": 1000000,
+        "gross_unexplained_minor": 1000000
+      },
+      "coverage": {
+        "numerator_minor": 19000000,
+        "denominator_minor": 20000000,
+        "percentage": 95.0
+      },
+      "facts": [
+        {
+          "id": "42a5bdd6f1030a9d6c53c85f3470b07c79abc52370a50394d2b63ef02c11e2da",
+          "snapshot_id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+          "period": "2026-11",
+          "scope": "budget",
+          "department": "Engineering",
+          "account": "CLOUD",
+          "label": "Cloud infrastructure",
+          "actual_minor": 30500000,
+          "budget_minor": 20000000,
+          "variance_minor": 10500000,
+          "percentage": 52.5,
+          "unbudgeted": false,
+          "direction": "adverse",
+          "material": true,
+          "source_ids": [
+            "1593aa81a16709c4251b9b90",
+            "3637eb23b6f7ebca803ddb63"
+          ],
+          "driver_ids": [
+            "4908f306e57c4f9e82e7ee7d94e340190ccb9876a9ef8bfb08338c2cfd0c95c6",
+            "10dfc5c89f96ee1fb16e228760154f59f7f53defd7f44b278448ca72b2f355bd"
+          ],
+          "amount_unit": "INR paise",
+          "calculation_version": "trabo-analysis-2.1",
+          "formula": "sum(actual_minor) - sum(comparison_minor)"
+        },
+        {
+          "id": "01a5742f601b69d3e4662093a8d8734bba88260f0c1de9d062f8a6ee8bcd1c60",
+          "snapshot_id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+          "period": "2026-11",
+          "scope": "budget",
+          "department": "People",
+          "account": "PAYROLL",
+          "label": "Payroll",
+          "actual_minor": 66000000,
+          "budget_minor": 60000000,
+          "variance_minor": 6000000,
+          "percentage": 10.0,
+          "unbudgeted": false,
+          "direction": "adverse",
+          "material": true,
+          "source_ids": [
+            "39f4d97ec38ec987c94616fa",
+            "9e2d1e5f75860dc4cecf8afd"
+          ],
+          "driver_ids": [
+            "6e898a3f4728d761504c2f06571bfa43f963e3385e2a490cfd65fc0a7110a96b"
+          ],
+          "amount_unit": "INR paise",
+          "calculation_version": "trabo-analysis-2.1",
+          "formula": "sum(actual_minor) - sum(comparison_minor)"
+        },
+        {
+          "id": "4c47d1ad39b9472ceb1f246358d4deb7e4640b2258a61534fa9e560218f6347d",
+          "snapshot_id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+          "period": "2026-11",
+          "scope": "budget",
+          "department": "Marketing",
+          "account": "MARKETING",
+          "label": "Marketing campaigns",
+          "actual_minor": 17500000,
+          "budget_minor": 15000000,
+          "variance_minor": 2500000,
+          "percentage": 16.67,
+          "unbudgeted": false,
+          "direction": "adverse",
+          "material": true,
+          "source_ids": [
+            "19a2d64aa4015e0c7b9fef25",
+            "7fc5bbfd24dbfb06d75a5950"
+          ],
+          "driver_ids": [
+            "c3881c072bc7a33af453e8f29fa23538d1946f3de34beed00d8989f11dbd5d98",
+            "5b4d5ffcfe6fd9a6f8b40668c635a5e8f0469303cfcb95da2806a2d89e31ae7f"
+          ],
+          "amount_unit": "INR paise",
+          "calculation_version": "trabo-analysis-2.1",
+          "formula": "sum(actual_minor) - sum(comparison_minor)"
+        },
+        {
+          "id": "ea2f13133d84f441baeb1718f0e6542af3c0771a4cba8cce280f2ca7a1c1b080",
+          "snapshot_id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+          "period": "2026-11",
+          "scope": "budget",
+          "department": "Operations",
+          "account": "OTHER",
+          "label": "Other operating costs",
+          "actual_minor": 4000000,
+          "budget_minor": 5000000,
+          "variance_minor": -1000000,
+          "percentage": -20.0,
+          "unbudgeted": false,
+          "direction": "favorable",
+          "material": false,
+          "source_ids": [
+            "a07ce8872603098a5df94222",
+            "e0980e98dd8d15a6bcf0b711"
+          ],
+          "driver_ids": [
+            "86efc0277c7ed1b4b021b40b054cbfb877966cf88cb1beba48264bd85a6f5488"
+          ],
+          "amount_unit": "INR paise",
+          "calculation_version": "trabo-analysis-2.1",
+          "formula": "sum(actual_minor) - sum(comparison_minor)"
+        }
+      ],
+      "material_fact_ids": [
+        "42a5bdd6f1030a9d6c53c85f3470b07c79abc52370a50394d2b63ef02c11e2da",
+        "01a5742f601b69d3e4662093a8d8734bba88260f0c1de9d062f8a6ee8bcd1c60",
+        "4c47d1ad39b9472ceb1f246358d4deb7e4640b2258a61534fa9e560218f6347d"
+      ],
+      "drivers": [
+        {
+          "id": "4908f306e57c4f9e82e7ee7d94e340190ccb9876a9ef8bfb08338c2cfd0c95c6",
+          "snapshot_id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+          "fact_id": "42a5bdd6f1030a9d6c53c85f3470b07c79abc52370a50394d2b63ef02c11e2da",
+          "period": "2026-11",
+          "scope": "budget",
+          "label": "Usage",
+          "kind": "quantity",
+          "amount_minor": 5000000,
+          "evidence_state": "supported",
+          "formula": "(actual units − budget units) × budget rate",
+          "inputs": {
+            "month": "2026-11",
+            "actual_units": "12500",
+            "budget_units": "10000",
+            "actual_rate_minor": 2440,
+            "budget_rate_minor": 2000,
+            "unit": "compute-hour",
+            "interaction_assigned_to": "rate"
+          },
+          "source_ids": [
+            "1593aa81a16709c4251b9b90",
+            "3637eb23b6f7ebca803ddb63",
+            "517bcf26f5196d70be248ad1",
+            "f273ad738463e6875fa3d072"
+          ],
+          "calculation_version": "trabo-analysis-2.1",
+          "amount_unit": "INR paise"
+        },
+        {
+          "id": "10dfc5c89f96ee1fb16e228760154f59f7f53defd7f44b278448ca72b2f355bd",
+          "snapshot_id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+          "fact_id": "42a5bdd6f1030a9d6c53c85f3470b07c79abc52370a50394d2b63ef02c11e2da",
+          "period": "2026-11",
+          "scope": "budget",
+          "label": "Rate",
+          "kind": "rate",
+          "amount_minor": 5500000,
+          "evidence_state": "supported",
+          "formula": "actual units × (actual rate − budget rate); rounding residual assigned here",
+          "inputs": {
+            "month": "2026-11",
+            "actual_units": "12500",
+            "budget_units": "10000",
+            "actual_rate_minor": 2440,
+            "budget_rate_minor": 2000,
+            "unit": "compute-hour",
+            "interaction_assigned_to": "rate"
+          },
+          "source_ids": [
+            "1593aa81a16709c4251b9b90",
+            "3637eb23b6f7ebca803ddb63",
+            "517bcf26f5196d70be248ad1",
+            "f273ad738463e6875fa3d072"
+          ],
+          "calculation_version": "trabo-analysis-2.1",
+          "amount_unit": "INR paise"
+        },
+        {
+          "id": "c3881c072bc7a33af453e8f29fa23538d1946f3de34beed00d8989f11dbd5d98",
+          "snapshot_id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+          "fact_id": "4c47d1ad39b9472ceb1f246358d4deb7e4640b2258a61534fa9e560218f6347d",
+          "period": "2026-11",
+          "scope": "budget",
+          "label": "Supported campaign",
+          "kind": "reviewed_annotation",
+          "amount_minor": 1500000,
+          "evidence_state": "supported",
+          "formula": "reviewed invoice attribution; bounded by remaining account variance",
+          "inputs": {
+            "month": "2026-11",
+            "reviewed_contribution_minor": 1500000,
+            "remaining_before_minor": 2500000,
+            "invoice_id": "INV-11-003"
+          },
+          "source_ids": [
+            "19a2d64aa4015e0c7b9fef25",
+            "7fc5bbfd24dbfb06d75a5950",
+            "a3002869df8ff2f38d2b1e42",
+            "ec621e3a16ec77b57527c398"
+          ],
+          "calculation_version": "trabo-analysis-2.1",
+          "amount_unit": "INR paise"
+        },
+        {
+          "id": "5b4d5ffcfe6fd9a6f8b40668c635a5e8f0469303cfcb95da2806a2d89e31ae7f",
+          "snapshot_id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+          "fact_id": "4c47d1ad39b9472ceb1f246358d4deb7e4640b2258a61534fa9e560218f6347d",
+          "period": "2026-11",
+          "scope": "budget",
+          "label": "Unexplained",
+          "kind": "residual",
+          "amount_minor": 1000000,
+          "evidence_state": "unknown",
+          "formula": "account variance − disjoint supported contributions",
+          "inputs": {
+            "month": "2026-11",
+            "actual_minor": 17500000,
+            "budget_minor": 15000000,
+            "unexplained_minor": 1000000
+          },
+          "source_ids": [
+            "19a2d64aa4015e0c7b9fef25",
+            "7fc5bbfd24dbfb06d75a5950"
+          ],
+          "calculation_version": "trabo-analysis-2.1",
+          "amount_unit": "INR paise"
+        },
+        {
+          "id": "6e898a3f4728d761504c2f06571bfa43f963e3385e2a490cfd65fc0a7110a96b",
+          "snapshot_id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+          "fact_id": "01a5742f601b69d3e4662093a8d8734bba88260f0c1de9d062f8a6ee8bcd1c60",
+          "period": "2026-11",
+          "scope": "budget",
+          "label": "Payroll",
+          "kind": "payroll",
+          "amount_minor": 6000000,
+          "evidence_state": "supported",
+          "formula": "actual FTE × actual loaded cost − budget FTE × budget loaded cost",
+          "inputs": {
+            "month": "2026-11",
+            "actual_fte": "10",
+            "budget_fte": "10",
+            "actual_loaded_cost_minor": "6600000",
+            "budget_loaded_cost_minor": "6000000",
+            "actual_minor": 66000000,
+            "budget_minor": 60000000
+          },
+          "source_ids": [
+            "39f4d97ec38ec987c94616fa",
+            "81c2240efcb8684e777b93ef",
+            "9e2d1e5f75860dc4cecf8afd",
+            "edd9d963499709c6484f3106"
+          ],
+          "calculation_version": "trabo-analysis-2.1",
+          "amount_unit": "INR paise"
+        }
+      ],
+      "owner_notes": [],
+      "scenario": {
+        "id": "1cfab6815392ff349d448d66d8f89aff8f65a1d249fe1995001482a6c9af27e2",
+        "snapshot_id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+        "name": "Synthetic golden plan",
+        "result": {
+          "id": "cb3c7906be6f2bc81c3f19e8a6c61692efdc00652010e80cf21f3d692415a0af",
+          "snapshot_id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+          "amount_unit": "INR paise",
+          "calculation_version": "trabo-scenario-2.1",
+          "parameters": {
+            "vendor_cut_bps": 2000,
+            "vendor_effective_month": "2027-01",
+            "freeze_position_ids": [
+              "POS-001"
+            ],
+            "one_time_cost_minor": 0,
+            "one_time_month": "2026-12"
+          },
+          "assumptions_hash": "eb06dc5d3dfd16e42ca256e51387793d7b2d794f91c9cd51ff9672596be6adc0",
+          "parameters_hash": "9cab7b8dce0c9dafe9decb4d4cb5aa2db2f8abd43e789de36c4f7f8b6cda8607",
+          "assumptions": {
+            "periods": [
+              {
+                "month": "2026-12",
+                "source_id": "35d00e32991e47c787ae282a",
+                "opening_cash_minor": 600000000,
+                "receipts_minor": 100000000,
+                "payments_minor": 140000000,
+                "buckets": {
+                  "recurring_vendor": 40000000,
+                  "existing_payroll": 66000000,
+                  "other_operating": 24000000,
+                  "taxes": 0,
+                  "capex": 0,
+                  "debt_service": 0,
+                  "scheduled_invoices": 10000000,
+                  "planned_hires": 0
+                },
+                "eligible_vendor_minor": 40000000,
+                "has_reviewed_buckets": true
+              },
+              {
+                "month": "2027-01",
+                "source_id": "98f86f40aae44b4a96fde3e6",
+                "opening_cash_minor": 560000000,
+                "receipts_minor": 100000000,
+                "payments_minor": 140000000,
+                "buckets": {
+                  "recurring_vendor": 50000000,
+                  "existing_payroll": 66000000,
+                  "other_operating": 24000000,
+                  "taxes": 0,
+                  "capex": 0,
+                  "debt_service": 0,
+                  "scheduled_invoices": 0,
+                  "planned_hires": 0
+                },
+                "eligible_vendor_minor": 50000000,
+                "has_reviewed_buckets": true
+              },
+              {
+                "month": "2027-02",
+                "source_id": "ed43f735e50f9c987185ec90",
+                "opening_cash_minor": 520000000,
+                "receipts_minor": 100000000,
+                "payments_minor": 140000000,
+                "buckets": {
+                  "recurring_vendor": 50000000,
+                  "existing_payroll": 66000000,
+                  "other_operating": 14000000,
+                  "taxes": 0,
+                  "capex": 0,
+                  "debt_service": 0,
+                  "scheduled_invoices": 0,
+                  "planned_hires": 10000000
+                },
+                "eligible_vendor_minor": 50000000,
+                "has_reviewed_buckets": true
+              },
+              {
+                "month": "2027-03",
+                "source_id": "fea0f0cdb12cb17624ce8617",
+                "opening_cash_minor": 480000000,
+                "receipts_minor": 100000000,
+                "payments_minor": 140000000,
+                "buckets": {
+                  "recurring_vendor": 50000000,
+                  "existing_payroll": 66000000,
+                  "other_operating": 14000000,
+                  "taxes": 0,
+                  "capex": 0,
+                  "debt_service": 0,
+                  "scheduled_invoices": 0,
+                  "planned_hires": 10000000
+                },
+                "eligible_vendor_minor": 50000000,
+                "has_reviewed_buckets": true
+              },
+              {
+                "month": "2027-04",
+                "source_id": "81280ca524838e503dc8435f",
+                "opening_cash_minor": 440000000,
+                "receipts_minor": 100000000,
+                "payments_minor": 140000000,
+                "buckets": {
+                  "recurring_vendor": 50000000,
+                  "existing_payroll": 66000000,
+                  "other_operating": 14000000,
+                  "taxes": 0,
+                  "capex": 0,
+                  "debt_service": 0,
+                  "scheduled_invoices": 0,
+                  "planned_hires": 10000000
+                },
+                "eligible_vendor_minor": 50000000,
+                "has_reviewed_buckets": true
+              },
+              {
+                "month": "2027-05",
+                "source_id": "44ca5028b0a9e82ddd34c544",
+                "opening_cash_minor": 400000000,
+                "receipts_minor": 100000000,
+                "payments_minor": 140000000,
+                "buckets": {
+                  "recurring_vendor": 50000000,
+                  "existing_payroll": 66000000,
+                  "other_operating": 14000000,
+                  "taxes": 0,
+                  "capex": 0,
+                  "debt_service": 0,
+                  "scheduled_invoices": 0,
+                  "planned_hires": 10000000
+                },
+                "eligible_vendor_minor": 50000000,
+                "has_reviewed_buckets": true
+              },
+              {
+                "month": "2027-06",
+                "source_id": "d19617498c453fb659393c19",
+                "opening_cash_minor": 360000000,
+                "receipts_minor": 100000000,
+                "payments_minor": 140000000,
+                "buckets": {
+                  "recurring_vendor": 50000000,
+                  "existing_payroll": 66000000,
+                  "other_operating": 14000000,
+                  "taxes": 0,
+                  "capex": 0,
+                  "debt_service": 0,
+                  "scheduled_invoices": 0,
+                  "planned_hires": 10000000
+                },
+                "eligible_vendor_minor": 50000000,
+                "has_reviewed_buckets": true
+              },
+              {
+                "month": "2027-07",
+                "source_id": "28bc3364d0a1f45affc8a33f",
+                "opening_cash_minor": 320000000,
+                "receipts_minor": 100000000,
+                "payments_minor": 140000000,
+                "buckets": {
+                  "recurring_vendor": 50000000,
+                  "existing_payroll": 66000000,
+                  "other_operating": 14000000,
+                  "taxes": 0,
+                  "capex": 0,
+                  "debt_service": 0,
+                  "scheduled_invoices": 0,
+                  "planned_hires": 10000000
+                },
+                "eligible_vendor_minor": 50000000,
+                "has_reviewed_buckets": true
+              },
+              {
+                "month": "2027-08",
+                "source_id": "21654621fcc48f18cd835e2b",
+                "opening_cash_minor": 280000000,
+                "receipts_minor": 100000000,
+                "payments_minor": 140000000,
+                "buckets": {
+                  "recurring_vendor": 50000000,
+                  "existing_payroll": 66000000,
+                  "other_operating": 14000000,
+                  "taxes": 0,
+                  "capex": 0,
+                  "debt_service": 0,
+                  "scheduled_invoices": 0,
+                  "planned_hires": 10000000
+                },
+                "eligible_vendor_minor": 50000000,
+                "has_reviewed_buckets": true
+              },
+              {
+                "month": "2027-09",
+                "source_id": "c4f18e0e58c905d1cd4fbbae",
+                "opening_cash_minor": 240000000,
+                "receipts_minor": 100000000,
+                "payments_minor": 140000000,
+                "buckets": {
+                  "recurring_vendor": 50000000,
+                  "existing_payroll": 66000000,
+                  "other_operating": 14000000,
+                  "taxes": 0,
+                  "capex": 0,
+                  "debt_service": 0,
+                  "scheduled_invoices": 0,
+                  "planned_hires": 10000000
+                },
+                "eligible_vendor_minor": 50000000,
+                "has_reviewed_buckets": true
+              },
+              {
+                "month": "2027-10",
+                "source_id": "18b6bb77f910fc62aa77506e",
+                "opening_cash_minor": 200000000,
+                "receipts_minor": 100000000,
+                "payments_minor": 140000000,
+                "buckets": {
+                  "recurring_vendor": 50000000,
+                  "existing_payroll": 66000000,
+                  "other_operating": 14000000,
+                  "taxes": 0,
+                  "capex": 0,
+                  "debt_service": 0,
+                  "scheduled_invoices": 0,
+                  "planned_hires": 10000000
+                },
+                "eligible_vendor_minor": 50000000,
+                "has_reviewed_buckets": true
+              },
+              {
+                "month": "2027-11",
+                "source_id": "1d089db7ca6996f35eeb1662",
+                "opening_cash_minor": 160000000,
+                "receipts_minor": 100000000,
+                "payments_minor": 140000000,
+                "buckets": {
+                  "recurring_vendor": 50000000,
+                  "existing_payroll": 66000000,
+                  "other_operating": 14000000,
+                  "taxes": 0,
+                  "capex": 0,
+                  "debt_service": 0,
+                  "scheduled_invoices": 0,
+                  "planned_hires": 10000000
+                },
+                "eligible_vendor_minor": 50000000,
+                "has_reviewed_buckets": true
+              }
+            ],
+            "reason": "",
+            "cash_available": true,
+            "opening_cash_minor": 600000000,
+            "source_snapshot": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+            "version": "trabo-scenario-2.1"
+          },
+          "input_assumptions": {
+            "reason": ""
+          },
+          "periods": [
+            "2026-12",
+            "2027-01",
+            "2027-02",
+            "2027-03",
+            "2027-04",
+            "2027-05",
+            "2027-06",
+            "2027-07",
+            "2027-08",
+            "2027-09",
+            "2027-10",
+            "2027-11"
+          ],
+          "cash_available": true,
+          "notes": [],
+          "baseline": [
+            {
+              "month": "2026-12",
+              "opening_minor": 600000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "closing_minor": 560000000
+            },
+            {
+              "month": "2027-01",
+              "opening_minor": 560000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "closing_minor": 520000000
+            },
+            {
+              "month": "2027-02",
+              "opening_minor": 520000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "closing_minor": 480000000
+            },
+            {
+              "month": "2027-03",
+              "opening_minor": 480000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "closing_minor": 440000000
+            },
+            {
+              "month": "2027-04",
+              "opening_minor": 440000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "closing_minor": 400000000
+            },
+            {
+              "month": "2027-05",
+              "opening_minor": 400000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "closing_minor": 360000000
+            },
+            {
+              "month": "2027-06",
+              "opening_minor": 360000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "closing_minor": 320000000
+            },
+            {
+              "month": "2027-07",
+              "opening_minor": 320000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "closing_minor": 280000000
+            },
+            {
+              "month": "2027-08",
+              "opening_minor": 280000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "closing_minor": 240000000
+            },
+            {
+              "month": "2027-09",
+              "opening_minor": 240000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "closing_minor": 200000000
+            },
+            {
+              "month": "2027-10",
+              "opening_minor": 200000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "closing_minor": 160000000
+            },
+            {
+              "month": "2027-11",
+              "opening_minor": 160000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "closing_minor": 120000000
+            }
+          ],
+          "scenario": [
+            {
+              "month": "2026-12",
+              "opening_minor": 600000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "closing_minor": 560000000
+            },
+            {
+              "month": "2027-01",
+              "opening_minor": 560000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 130000000,
+              "closing_minor": 530000000
+            },
+            {
+              "month": "2027-02",
+              "opening_minor": 530000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 120000000,
+              "closing_minor": 510000000
+            },
+            {
+              "month": "2027-03",
+              "opening_minor": 510000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 120000000,
+              "closing_minor": 490000000
+            },
+            {
+              "month": "2027-04",
+              "opening_minor": 490000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 120000000,
+              "closing_minor": 470000000
+            },
+            {
+              "month": "2027-05",
+              "opening_minor": 470000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 120000000,
+              "closing_minor": 450000000
+            },
+            {
+              "month": "2027-06",
+              "opening_minor": 450000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 120000000,
+              "closing_minor": 430000000
+            },
+            {
+              "month": "2027-07",
+              "opening_minor": 430000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 120000000,
+              "closing_minor": 410000000
+            },
+            {
+              "month": "2027-08",
+              "opening_minor": 410000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 120000000,
+              "closing_minor": 390000000
+            },
+            {
+              "month": "2027-09",
+              "opening_minor": 390000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 120000000,
+              "closing_minor": 370000000
+            },
+            {
+              "month": "2027-10",
+              "opening_minor": 370000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 120000000,
+              "closing_minor": 350000000
+            },
+            {
+              "month": "2027-11",
+              "opening_minor": 350000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 120000000,
+              "closing_minor": 330000000
+            }
+          ],
+          "payment_schedule": [
+            {
+              "month": "2026-12",
+              "source_id": "35d00e32991e47c787ae282a",
+              "opening_cash_minor": 600000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 40000000,
+                "existing_payroll": 66000000,
+                "other_operating": 24000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 10000000,
+                "planned_hires": 0
+              },
+              "eligible_vendor_minor": 40000000,
+              "has_reviewed_buckets": true,
+              "vendor_saving_minor": 0,
+              "hiring_saving_minor": 0,
+              "one_time_cost_minor": 0,
+              "net_saving_minor": 0
+            },
+            {
+              "month": "2027-01",
+              "source_id": "98f86f40aae44b4a96fde3e6",
+              "opening_cash_minor": 560000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 24000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 0
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true,
+              "vendor_saving_minor": 10000000,
+              "hiring_saving_minor": 0,
+              "one_time_cost_minor": 0,
+              "net_saving_minor": 10000000
+            },
+            {
+              "month": "2027-02",
+              "source_id": "ed43f735e50f9c987185ec90",
+              "opening_cash_minor": 520000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true,
+              "vendor_saving_minor": 10000000,
+              "hiring_saving_minor": 10000000,
+              "one_time_cost_minor": 0,
+              "net_saving_minor": 20000000
+            },
+            {
+              "month": "2027-03",
+              "source_id": "fea0f0cdb12cb17624ce8617",
+              "opening_cash_minor": 480000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true,
+              "vendor_saving_minor": 10000000,
+              "hiring_saving_minor": 10000000,
+              "one_time_cost_minor": 0,
+              "net_saving_minor": 20000000
+            },
+            {
+              "month": "2027-04",
+              "source_id": "81280ca524838e503dc8435f",
+              "opening_cash_minor": 440000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true,
+              "vendor_saving_minor": 10000000,
+              "hiring_saving_minor": 10000000,
+              "one_time_cost_minor": 0,
+              "net_saving_minor": 20000000
+            },
+            {
+              "month": "2027-05",
+              "source_id": "44ca5028b0a9e82ddd34c544",
+              "opening_cash_minor": 400000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true,
+              "vendor_saving_minor": 10000000,
+              "hiring_saving_minor": 10000000,
+              "one_time_cost_minor": 0,
+              "net_saving_minor": 20000000
+            },
+            {
+              "month": "2027-06",
+              "source_id": "d19617498c453fb659393c19",
+              "opening_cash_minor": 360000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true,
+              "vendor_saving_minor": 10000000,
+              "hiring_saving_minor": 10000000,
+              "one_time_cost_minor": 0,
+              "net_saving_minor": 20000000
+            },
+            {
+              "month": "2027-07",
+              "source_id": "28bc3364d0a1f45affc8a33f",
+              "opening_cash_minor": 320000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true,
+              "vendor_saving_minor": 10000000,
+              "hiring_saving_minor": 10000000,
+              "one_time_cost_minor": 0,
+              "net_saving_minor": 20000000
+            },
+            {
+              "month": "2027-08",
+              "source_id": "21654621fcc48f18cd835e2b",
+              "opening_cash_minor": 280000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true,
+              "vendor_saving_minor": 10000000,
+              "hiring_saving_minor": 10000000,
+              "one_time_cost_minor": 0,
+              "net_saving_minor": 20000000
+            },
+            {
+              "month": "2027-09",
+              "source_id": "c4f18e0e58c905d1cd4fbbae",
+              "opening_cash_minor": 240000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true,
+              "vendor_saving_minor": 10000000,
+              "hiring_saving_minor": 10000000,
+              "one_time_cost_minor": 0,
+              "net_saving_minor": 20000000
+            },
+            {
+              "month": "2027-10",
+              "source_id": "18b6bb77f910fc62aa77506e",
+              "opening_cash_minor": 200000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true,
+              "vendor_saving_minor": 10000000,
+              "hiring_saving_minor": 10000000,
+              "one_time_cost_minor": 0,
+              "net_saving_minor": 20000000
+            },
+            {
+              "month": "2027-11",
+              "source_id": "1d089db7ca6996f35eeb1662",
+              "opening_cash_minor": 160000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true,
+              "vendor_saving_minor": 10000000,
+              "hiring_saving_minor": 10000000,
+              "one_time_cost_minor": 0,
+              "net_saving_minor": 20000000
+            }
+          ],
+          "positions": [
+            {
+              "id": "POS-001",
+              "department": "Engineering",
+              "start_date": "2027-02-01",
+              "monthly_cost_minor": 10000000,
+              "eligible": true,
+              "reason": "Uncommitted future position",
+              "source_id": "f01db783ebb44a05b80a42b6"
+            }
+          ],
+          "excluded_commitments": [
+            {
+              "id": "OBL-001",
+              "reason": "Scheduled committed payment; never cut or added again",
+              "amount_minor": 10000000,
+              "source_id": "544d8352b91f1eac0f0f1618"
+            }
+          ],
+          "summary": {
+            "baseline_closing_minor": 120000000,
+            "scenario_closing_minor": 330000000,
+            "vendor_savings_minor": 110000000,
+            "hiring_savings_minor": 100000000,
+            "one_time_cost_minor": 0,
+            "net_savings_minor": 210000000,
+            "baseline_first_negative_month": null,
+            "scenario_first_negative_month": null
+          },
+          "transformation_order": [
+            "review exclusive buckets",
+            "exclude commitments and duplicate references",
+            "apply eligible vendor reduction from effective month",
+            "freeze selected uncommitted hires with calendar-day proration",
+            "apply one-time cost",
+            "roll cash forward"
+          ]
+        },
+        "created_at": "2026-11-21T20:05:40.637052+00:00",
+        "saved_by": "synthetic-reviewer@trabo.local",
+        "parameters_hash": "9cab7b8dce0c9dafe9decb4d4cb5aa2db2f8abd43e789de36c4f7f8b6cda8607",
+        "assumptions_hash": "eb06dc5d3dfd16e42ca256e51387793d7b2d794f91c9cd51ff9672596be6adc0"
+      },
+      "baseline_cash": {
+        "id": "6a7bb0f29da41d09fdac09fd8305cbedf320f0ffd43aa5bdc9d28cb88dc688f9",
+        "snapshot_id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+        "amount_unit": "INR paise",
+        "calculation_version": "trabo-scenario-2.1",
+        "parameters": {
+          "vendor_cut_bps": 0,
+          "vendor_effective_month": "2027-01",
+          "freeze_position_ids": [],
+          "one_time_cost_minor": 0,
+          "one_time_month": "2026-12"
+        },
+        "assumptions_hash": "eb06dc5d3dfd16e42ca256e51387793d7b2d794f91c9cd51ff9672596be6adc0",
+        "parameters_hash": "c2b07ff02c29312f221fe04071fd9ee71458a64a888e547e0ef51f1866580e9a",
+        "assumptions": {
+          "periods": [
+            {
+              "month": "2026-12",
+              "source_id": "35d00e32991e47c787ae282a",
+              "opening_cash_minor": 600000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 40000000,
+                "existing_payroll": 66000000,
+                "other_operating": 24000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 10000000,
+                "planned_hires": 0
+              },
+              "eligible_vendor_minor": 40000000,
+              "has_reviewed_buckets": true
+            },
+            {
+              "month": "2027-01",
+              "source_id": "98f86f40aae44b4a96fde3e6",
+              "opening_cash_minor": 560000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 24000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 0
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true
+            },
+            {
+              "month": "2027-02",
+              "source_id": "ed43f735e50f9c987185ec90",
+              "opening_cash_minor": 520000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true
+            },
+            {
+              "month": "2027-03",
+              "source_id": "fea0f0cdb12cb17624ce8617",
+              "opening_cash_minor": 480000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true
+            },
+            {
+              "month": "2027-04",
+              "source_id": "81280ca524838e503dc8435f",
+              "opening_cash_minor": 440000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true
+            },
+            {
+              "month": "2027-05",
+              "source_id": "44ca5028b0a9e82ddd34c544",
+              "opening_cash_minor": 400000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true
+            },
+            {
+              "month": "2027-06",
+              "source_id": "d19617498c453fb659393c19",
+              "opening_cash_minor": 360000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true
+            },
+            {
+              "month": "2027-07",
+              "source_id": "28bc3364d0a1f45affc8a33f",
+              "opening_cash_minor": 320000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true
+            },
+            {
+              "month": "2027-08",
+              "source_id": "21654621fcc48f18cd835e2b",
+              "opening_cash_minor": 280000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true
+            },
+            {
+              "month": "2027-09",
+              "source_id": "c4f18e0e58c905d1cd4fbbae",
+              "opening_cash_minor": 240000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true
+            },
+            {
+              "month": "2027-10",
+              "source_id": "18b6bb77f910fc62aa77506e",
+              "opening_cash_minor": 200000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true
+            },
+            {
+              "month": "2027-11",
+              "source_id": "1d089db7ca6996f35eeb1662",
+              "opening_cash_minor": 160000000,
+              "receipts_minor": 100000000,
+              "payments_minor": 140000000,
+              "buckets": {
+                "recurring_vendor": 50000000,
+                "existing_payroll": 66000000,
+                "other_operating": 14000000,
+                "taxes": 0,
+                "capex": 0,
+                "debt_service": 0,
+                "scheduled_invoices": 0,
+                "planned_hires": 10000000
+              },
+              "eligible_vendor_minor": 50000000,
+              "has_reviewed_buckets": true
+            }
+          ],
+          "reason": "",
+          "cash_available": true,
+          "opening_cash_minor": 600000000,
+          "source_snapshot": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+          "version": "trabo-scenario-2.1"
+        },
+        "input_assumptions": {},
+        "periods": [
+          "2026-12",
+          "2027-01",
+          "2027-02",
+          "2027-03",
+          "2027-04",
+          "2027-05",
+          "2027-06",
+          "2027-07",
+          "2027-08",
+          "2027-09",
+          "2027-10",
+          "2027-11"
+        ],
+        "cash_available": true,
+        "notes": [],
+        "baseline": [
+          {
+            "month": "2026-12",
+            "opening_minor": 600000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 560000000
+          },
+          {
+            "month": "2027-01",
+            "opening_minor": 560000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 520000000
+          },
+          {
+            "month": "2027-02",
+            "opening_minor": 520000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 480000000
+          },
+          {
+            "month": "2027-03",
+            "opening_minor": 480000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 440000000
+          },
+          {
+            "month": "2027-04",
+            "opening_minor": 440000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 400000000
+          },
+          {
+            "month": "2027-05",
+            "opening_minor": 400000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 360000000
+          },
+          {
+            "month": "2027-06",
+            "opening_minor": 360000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 320000000
+          },
+          {
+            "month": "2027-07",
+            "opening_minor": 320000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 280000000
+          },
+          {
+            "month": "2027-08",
+            "opening_minor": 280000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 240000000
+          },
+          {
+            "month": "2027-09",
+            "opening_minor": 240000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 200000000
+          },
+          {
+            "month": "2027-10",
+            "opening_minor": 200000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 160000000
+          },
+          {
+            "month": "2027-11",
+            "opening_minor": 160000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 120000000
+          }
+        ],
+        "scenario": [
+          {
+            "month": "2026-12",
+            "opening_minor": 600000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 560000000
+          },
+          {
+            "month": "2027-01",
+            "opening_minor": 560000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 520000000
+          },
+          {
+            "month": "2027-02",
+            "opening_minor": 520000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 480000000
+          },
+          {
+            "month": "2027-03",
+            "opening_minor": 480000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 440000000
+          },
+          {
+            "month": "2027-04",
+            "opening_minor": 440000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 400000000
+          },
+          {
+            "month": "2027-05",
+            "opening_minor": 400000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 360000000
+          },
+          {
+            "month": "2027-06",
+            "opening_minor": 360000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 320000000
+          },
+          {
+            "month": "2027-07",
+            "opening_minor": 320000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 280000000
+          },
+          {
+            "month": "2027-08",
+            "opening_minor": 280000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 240000000
+          },
+          {
+            "month": "2027-09",
+            "opening_minor": 240000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 200000000
+          },
+          {
+            "month": "2027-10",
+            "opening_minor": 200000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 160000000
+          },
+          {
+            "month": "2027-11",
+            "opening_minor": 160000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "closing_minor": 120000000
+          }
+        ],
+        "payment_schedule": [
+          {
+            "month": "2026-12",
+            "source_id": "35d00e32991e47c787ae282a",
+            "opening_cash_minor": 600000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "buckets": {
+              "recurring_vendor": 40000000,
+              "existing_payroll": 66000000,
+              "other_operating": 24000000,
+              "taxes": 0,
+              "capex": 0,
+              "debt_service": 0,
+              "scheduled_invoices": 10000000,
+              "planned_hires": 0
+            },
+            "eligible_vendor_minor": 40000000,
+            "has_reviewed_buckets": true,
+            "vendor_saving_minor": 0,
+            "hiring_saving_minor": 0,
+            "one_time_cost_minor": 0,
+            "net_saving_minor": 0
+          },
+          {
+            "month": "2027-01",
+            "source_id": "98f86f40aae44b4a96fde3e6",
+            "opening_cash_minor": 560000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "buckets": {
+              "recurring_vendor": 50000000,
+              "existing_payroll": 66000000,
+              "other_operating": 24000000,
+              "taxes": 0,
+              "capex": 0,
+              "debt_service": 0,
+              "scheduled_invoices": 0,
+              "planned_hires": 0
+            },
+            "eligible_vendor_minor": 50000000,
+            "has_reviewed_buckets": true,
+            "vendor_saving_minor": 0,
+            "hiring_saving_minor": 0,
+            "one_time_cost_minor": 0,
+            "net_saving_minor": 0
+          },
+          {
+            "month": "2027-02",
+            "source_id": "ed43f735e50f9c987185ec90",
+            "opening_cash_minor": 520000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "buckets": {
+              "recurring_vendor": 50000000,
+              "existing_payroll": 66000000,
+              "other_operating": 14000000,
+              "taxes": 0,
+              "capex": 0,
+              "debt_service": 0,
+              "scheduled_invoices": 0,
+              "planned_hires": 10000000
+            },
+            "eligible_vendor_minor": 50000000,
+            "has_reviewed_buckets": true,
+            "vendor_saving_minor": 0,
+            "hiring_saving_minor": 0,
+            "one_time_cost_minor": 0,
+            "net_saving_minor": 0
+          },
+          {
+            "month": "2027-03",
+            "source_id": "fea0f0cdb12cb17624ce8617",
+            "opening_cash_minor": 480000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "buckets": {
+              "recurring_vendor": 50000000,
+              "existing_payroll": 66000000,
+              "other_operating": 14000000,
+              "taxes": 0,
+              "capex": 0,
+              "debt_service": 0,
+              "scheduled_invoices": 0,
+              "planned_hires": 10000000
+            },
+            "eligible_vendor_minor": 50000000,
+            "has_reviewed_buckets": true,
+            "vendor_saving_minor": 0,
+            "hiring_saving_minor": 0,
+            "one_time_cost_minor": 0,
+            "net_saving_minor": 0
+          },
+          {
+            "month": "2027-04",
+            "source_id": "81280ca524838e503dc8435f",
+            "opening_cash_minor": 440000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "buckets": {
+              "recurring_vendor": 50000000,
+              "existing_payroll": 66000000,
+              "other_operating": 14000000,
+              "taxes": 0,
+              "capex": 0,
+              "debt_service": 0,
+              "scheduled_invoices": 0,
+              "planned_hires": 10000000
+            },
+            "eligible_vendor_minor": 50000000,
+            "has_reviewed_buckets": true,
+            "vendor_saving_minor": 0,
+            "hiring_saving_minor": 0,
+            "one_time_cost_minor": 0,
+            "net_saving_minor": 0
+          },
+          {
+            "month": "2027-05",
+            "source_id": "44ca5028b0a9e82ddd34c544",
+            "opening_cash_minor": 400000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "buckets": {
+              "recurring_vendor": 50000000,
+              "existing_payroll": 66000000,
+              "other_operating": 14000000,
+              "taxes": 0,
+              "capex": 0,
+              "debt_service": 0,
+              "scheduled_invoices": 0,
+              "planned_hires": 10000000
+            },
+            "eligible_vendor_minor": 50000000,
+            "has_reviewed_buckets": true,
+            "vendor_saving_minor": 0,
+            "hiring_saving_minor": 0,
+            "one_time_cost_minor": 0,
+            "net_saving_minor": 0
+          },
+          {
+            "month": "2027-06",
+            "source_id": "d19617498c453fb659393c19",
+            "opening_cash_minor": 360000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "buckets": {
+              "recurring_vendor": 50000000,
+              "existing_payroll": 66000000,
+              "other_operating": 14000000,
+              "taxes": 0,
+              "capex": 0,
+              "debt_service": 0,
+              "scheduled_invoices": 0,
+              "planned_hires": 10000000
+            },
+            "eligible_vendor_minor": 50000000,
+            "has_reviewed_buckets": true,
+            "vendor_saving_minor": 0,
+            "hiring_saving_minor": 0,
+            "one_time_cost_minor": 0,
+            "net_saving_minor": 0
+          },
+          {
+            "month": "2027-07",
+            "source_id": "28bc3364d0a1f45affc8a33f",
+            "opening_cash_minor": 320000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "buckets": {
+              "recurring_vendor": 50000000,
+              "existing_payroll": 66000000,
+              "other_operating": 14000000,
+              "taxes": 0,
+              "capex": 0,
+              "debt_service": 0,
+              "scheduled_invoices": 0,
+              "planned_hires": 10000000
+            },
+            "eligible_vendor_minor": 50000000,
+            "has_reviewed_buckets": true,
+            "vendor_saving_minor": 0,
+            "hiring_saving_minor": 0,
+            "one_time_cost_minor": 0,
+            "net_saving_minor": 0
+          },
+          {
+            "month": "2027-08",
+            "source_id": "21654621fcc48f18cd835e2b",
+            "opening_cash_minor": 280000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "buckets": {
+              "recurring_vendor": 50000000,
+              "existing_payroll": 66000000,
+              "other_operating": 14000000,
+              "taxes": 0,
+              "capex": 0,
+              "debt_service": 0,
+              "scheduled_invoices": 0,
+              "planned_hires": 10000000
+            },
+            "eligible_vendor_minor": 50000000,
+            "has_reviewed_buckets": true,
+            "vendor_saving_minor": 0,
+            "hiring_saving_minor": 0,
+            "one_time_cost_minor": 0,
+            "net_saving_minor": 0
+          },
+          {
+            "month": "2027-09",
+            "source_id": "c4f18e0e58c905d1cd4fbbae",
+            "opening_cash_minor": 240000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "buckets": {
+              "recurring_vendor": 50000000,
+              "existing_payroll": 66000000,
+              "other_operating": 14000000,
+              "taxes": 0,
+              "capex": 0,
+              "debt_service": 0,
+              "scheduled_invoices": 0,
+              "planned_hires": 10000000
+            },
+            "eligible_vendor_minor": 50000000,
+            "has_reviewed_buckets": true,
+            "vendor_saving_minor": 0,
+            "hiring_saving_minor": 0,
+            "one_time_cost_minor": 0,
+            "net_saving_minor": 0
+          },
+          {
+            "month": "2027-10",
+            "source_id": "18b6bb77f910fc62aa77506e",
+            "opening_cash_minor": 200000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "buckets": {
+              "recurring_vendor": 50000000,
+              "existing_payroll": 66000000,
+              "other_operating": 14000000,
+              "taxes": 0,
+              "capex": 0,
+              "debt_service": 0,
+              "scheduled_invoices": 0,
+              "planned_hires": 10000000
+            },
+            "eligible_vendor_minor": 50000000,
+            "has_reviewed_buckets": true,
+            "vendor_saving_minor": 0,
+            "hiring_saving_minor": 0,
+            "one_time_cost_minor": 0,
+            "net_saving_minor": 0
+          },
+          {
+            "month": "2027-11",
+            "source_id": "1d089db7ca6996f35eeb1662",
+            "opening_cash_minor": 160000000,
+            "receipts_minor": 100000000,
+            "payments_minor": 140000000,
+            "buckets": {
+              "recurring_vendor": 50000000,
+              "existing_payroll": 66000000,
+              "other_operating": 14000000,
+              "taxes": 0,
+              "capex": 0,
+              "debt_service": 0,
+              "scheduled_invoices": 0,
+              "planned_hires": 10000000
+            },
+            "eligible_vendor_minor": 50000000,
+            "has_reviewed_buckets": true,
+            "vendor_saving_minor": 0,
+            "hiring_saving_minor": 0,
+            "one_time_cost_minor": 0,
+            "net_saving_minor": 0
+          }
+        ],
+        "positions": [
+          {
+            "id": "POS-001",
+            "department": "Engineering",
+            "start_date": "2027-02-01",
+            "monthly_cost_minor": 10000000,
+            "eligible": true,
+            "reason": "Uncommitted future position",
+            "source_id": "f01db783ebb44a05b80a42b6"
+          }
+        ],
+        "excluded_commitments": [
+          {
+            "id": "OBL-001",
+            "reason": "Scheduled committed payment; never cut or added again",
+            "amount_minor": 10000000,
+            "source_id": "544d8352b91f1eac0f0f1618"
+          }
+        ],
+        "summary": {
+          "baseline_closing_minor": 120000000,
+          "scenario_closing_minor": 120000000,
+          "vendor_savings_minor": 0,
+          "hiring_savings_minor": 0,
+          "one_time_cost_minor": 0,
+          "net_savings_minor": 0,
+          "baseline_first_negative_month": null,
+          "scenario_first_negative_month": null
+        },
+        "transformation_order": [
+          "review exclusive buckets",
+          "exclude commitments and duplicate references",
+          "apply eligible vendor reduction from effective month",
+          "freeze selected uncommitted hires with calendar-day proration",
+          "apply one-time cost",
+          "roll cash forward"
+        ]
+      },
+      "support_warnings": [],
+      "evidence": [
+        {
+          "id": "1593aa81a16709c4251b9b90",
+          "role": "budgets",
+          "source": {
+            "file_hash": "a6856c54bdc82e127021326bfb542927e7322545090f29f95c6a284be1b04f35",
+            "filename": "budgets.csv",
+            "sheet": "CSV",
+            "row": 22,
+            "columns": {
+              "month": "month",
+              "department": "department",
+              "account": "account",
+              "amount": "amount",
+              "budget_version": "budget_version",
+              "currency": "currency"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "1634a5245c80db39a0850508e270b531b055ac1245f945116bfcb3fb1ca6d6d6",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "18b6bb77f910fc62aa77506e",
+          "role": "cash",
+          "source": {
+            "file_hash": "40b17c87e0ec3e2f69c8477dc88ea645331580300854f5589e76d928a9081250",
+            "filename": "cash.csv",
+            "sheet": "CSV",
+            "row": 12,
+            "columns": {
+              "month": "month",
+              "opening_cash": "opening_cash",
+              "receipts": "receipts",
+              "payments": "payments",
+              "currency": "currency",
+              "recurring_vendor": "recurring_vendor",
+              "existing_payroll": "existing_payroll",
+              "other_operating": "other_operating",
+              "taxes": "taxes",
+              "capex": "capex",
+              "debt_service": "debt_service",
+              "scheduled_invoices": "scheduled_invoices",
+              "planned_hires": "planned_hires",
+              "breakdown_reviewed": "breakdown_reviewed",
+              "vendor_cancellable": "vendor_cancellable"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "35f4546169c01a60d96c57969a2afca11476bae646deb604ce9132cbe8c79521",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "19a2d64aa4015e0c7b9fef25",
+          "role": "budgets",
+          "source": {
+            "file_hash": "a6856c54bdc82e127021326bfb542927e7322545090f29f95c6a284be1b04f35",
+            "filename": "budgets.csv",
+            "sheet": "CSV",
+            "row": 24,
+            "columns": {
+              "month": "month",
+              "department": "department",
+              "account": "account",
+              "amount": "amount",
+              "budget_version": "budget_version",
+              "currency": "currency"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "1634a5245c80db39a0850508e270b531b055ac1245f945116bfcb3fb1ca6d6d6",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "1d089db7ca6996f35eeb1662",
+          "role": "cash",
+          "source": {
+            "file_hash": "40b17c87e0ec3e2f69c8477dc88ea645331580300854f5589e76d928a9081250",
+            "filename": "cash.csv",
+            "sheet": "CSV",
+            "row": 13,
+            "columns": {
+              "month": "month",
+              "opening_cash": "opening_cash",
+              "receipts": "receipts",
+              "payments": "payments",
+              "currency": "currency",
+              "recurring_vendor": "recurring_vendor",
+              "existing_payroll": "existing_payroll",
+              "other_operating": "other_operating",
+              "taxes": "taxes",
+              "capex": "capex",
+              "debt_service": "debt_service",
+              "scheduled_invoices": "scheduled_invoices",
+              "planned_hires": "planned_hires",
+              "breakdown_reviewed": "breakdown_reviewed",
+              "vendor_cancellable": "vendor_cancellable"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "35f4546169c01a60d96c57969a2afca11476bae646deb604ce9132cbe8c79521",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "21654621fcc48f18cd835e2b",
+          "role": "cash",
+          "source": {
+            "file_hash": "40b17c87e0ec3e2f69c8477dc88ea645331580300854f5589e76d928a9081250",
+            "filename": "cash.csv",
+            "sheet": "CSV",
+            "row": 10,
+            "columns": {
+              "month": "month",
+              "opening_cash": "opening_cash",
+              "receipts": "receipts",
+              "payments": "payments",
+              "currency": "currency",
+              "recurring_vendor": "recurring_vendor",
+              "existing_payroll": "existing_payroll",
+              "other_operating": "other_operating",
+              "taxes": "taxes",
+              "capex": "capex",
+              "debt_service": "debt_service",
+              "scheduled_invoices": "scheduled_invoices",
+              "planned_hires": "planned_hires",
+              "breakdown_reviewed": "breakdown_reviewed",
+              "vendor_cancellable": "vendor_cancellable"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "35f4546169c01a60d96c57969a2afca11476bae646deb604ce9132cbe8c79521",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "28bc3364d0a1f45affc8a33f",
+          "role": "cash",
+          "source": {
+            "file_hash": "40b17c87e0ec3e2f69c8477dc88ea645331580300854f5589e76d928a9081250",
+            "filename": "cash.csv",
+            "sheet": "CSV",
+            "row": 9,
+            "columns": {
+              "month": "month",
+              "opening_cash": "opening_cash",
+              "receipts": "receipts",
+              "payments": "payments",
+              "currency": "currency",
+              "recurring_vendor": "recurring_vendor",
+              "existing_payroll": "existing_payroll",
+              "other_operating": "other_operating",
+              "taxes": "taxes",
+              "capex": "capex",
+              "debt_service": "debt_service",
+              "scheduled_invoices": "scheduled_invoices",
+              "planned_hires": "planned_hires",
+              "breakdown_reviewed": "breakdown_reviewed",
+              "vendor_cancellable": "vendor_cancellable"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "35f4546169c01a60d96c57969a2afca11476bae646deb604ce9132cbe8c79521",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "35d00e32991e47c787ae282a",
+          "role": "cash",
+          "source": {
+            "file_hash": "40b17c87e0ec3e2f69c8477dc88ea645331580300854f5589e76d928a9081250",
+            "filename": "cash.csv",
+            "sheet": "CSV",
+            "row": 2,
+            "columns": {
+              "month": "month",
+              "opening_cash": "opening_cash",
+              "receipts": "receipts",
+              "payments": "payments",
+              "currency": "currency",
+              "recurring_vendor": "recurring_vendor",
+              "existing_payroll": "existing_payroll",
+              "other_operating": "other_operating",
+              "taxes": "taxes",
+              "capex": "capex",
+              "debt_service": "debt_service",
+              "scheduled_invoices": "scheduled_invoices",
+              "planned_hires": "planned_hires",
+              "breakdown_reviewed": "breakdown_reviewed",
+              "vendor_cancellable": "vendor_cancellable"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "35f4546169c01a60d96c57969a2afca11476bae646deb604ce9132cbe8c79521",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "3637eb23b6f7ebca803ddb63",
+          "role": "actuals",
+          "source": {
+            "file_hash": "89083ff9b209e00cc032b8183760ab87d274fbdbb539d8b7532e82b4f156e7de",
+            "filename": "actuals.csv",
+            "sheet": "CSV",
+            "row": 22,
+            "columns": {
+              "journal_id": "journal_id",
+              "line_id": "line_id",
+              "date": "date",
+              "department": "department",
+              "account": "account",
+              "amount": "amount",
+              "currency": "currency",
+              "description": "description",
+              "vendor": "vendor"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "2abeb79557fce6965cf998abdf0d23a3eca766238550f776c0cf04a6d6c19ecd",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "39f4d97ec38ec987c94616fa",
+          "role": "actuals",
+          "source": {
+            "file_hash": "89083ff9b209e00cc032b8183760ab87d274fbdbb539d8b7532e82b4f156e7de",
+            "filename": "actuals.csv",
+            "sheet": "CSV",
+            "row": 23,
+            "columns": {
+              "journal_id": "journal_id",
+              "line_id": "line_id",
+              "date": "date",
+              "department": "department",
+              "account": "account",
+              "amount": "amount",
+              "currency": "currency",
+              "description": "description",
+              "vendor": "vendor"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "2abeb79557fce6965cf998abdf0d23a3eca766238550f776c0cf04a6d6c19ecd",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "44ca5028b0a9e82ddd34c544",
+          "role": "cash",
+          "source": {
+            "file_hash": "40b17c87e0ec3e2f69c8477dc88ea645331580300854f5589e76d928a9081250",
+            "filename": "cash.csv",
+            "sheet": "CSV",
+            "row": 7,
+            "columns": {
+              "month": "month",
+              "opening_cash": "opening_cash",
+              "receipts": "receipts",
+              "payments": "payments",
+              "currency": "currency",
+              "recurring_vendor": "recurring_vendor",
+              "existing_payroll": "existing_payroll",
+              "other_operating": "other_operating",
+              "taxes": "taxes",
+              "capex": "capex",
+              "debt_service": "debt_service",
+              "scheduled_invoices": "scheduled_invoices",
+              "planned_hires": "planned_hires",
+              "breakdown_reviewed": "breakdown_reviewed",
+              "vendor_cancellable": "vendor_cancellable"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "35f4546169c01a60d96c57969a2afca11476bae646deb604ce9132cbe8c79521",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "517bcf26f5196d70be248ad1",
+          "role": "units_rates",
+          "source": {
+            "file_hash": "fa98be1fca6a556fee138c4338b99cbf40140cbefcd122f5d03a7453bf113119",
+            "filename": "units_rates.csv",
+            "sheet": "CSV",
+            "row": 12,
+            "columns": {
+              "month": "month",
+              "department": "department",
+              "account": "account",
+              "units": "units",
+              "rate": "rate",
+              "kind": "kind",
+              "currency": "currency",
+              "unit": "unit"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "4cea27a3c422c6db256f8a45f78f728c9b07163e64bd3804ae861a24d09aaa95",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "544d8352b91f1eac0f0f1618",
+          "role": "obligations",
+          "source": {
+            "file_hash": "c014f5c9a3d3f141f2f5d694334490194e4c3f4f49ba6015eac9075b99ac8dcd",
+            "filename": "obligations.csv",
+            "sheet": "CSV",
+            "row": 2,
+            "columns": {
+              "obligation_id": "obligation_id",
+              "date": "date",
+              "amount": "amount",
+              "category": "category",
+              "committed": "committed",
+              "currency": "currency"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "efa0a68e051b1c03b81d32bf9c53373db68c76f7eb6ac4ed1dbe85941a3f29ac",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "7fc5bbfd24dbfb06d75a5950",
+          "role": "actuals",
+          "source": {
+            "file_hash": "89083ff9b209e00cc032b8183760ab87d274fbdbb539d8b7532e82b4f156e7de",
+            "filename": "actuals.csv",
+            "sheet": "CSV",
+            "row": 24,
+            "columns": {
+              "journal_id": "journal_id",
+              "line_id": "line_id",
+              "date": "date",
+              "department": "department",
+              "account": "account",
+              "amount": "amount",
+              "currency": "currency",
+              "description": "description",
+              "vendor": "vendor"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "2abeb79557fce6965cf998abdf0d23a3eca766238550f776c0cf04a6d6c19ecd",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "81280ca524838e503dc8435f",
+          "role": "cash",
+          "source": {
+            "file_hash": "40b17c87e0ec3e2f69c8477dc88ea645331580300854f5589e76d928a9081250",
+            "filename": "cash.csv",
+            "sheet": "CSV",
+            "row": 6,
+            "columns": {
+              "month": "month",
+              "opening_cash": "opening_cash",
+              "receipts": "receipts",
+              "payments": "payments",
+              "currency": "currency",
+              "recurring_vendor": "recurring_vendor",
+              "existing_payroll": "existing_payroll",
+              "other_operating": "other_operating",
+              "taxes": "taxes",
+              "capex": "capex",
+              "debt_service": "debt_service",
+              "scheduled_invoices": "scheduled_invoices",
+              "planned_hires": "planned_hires",
+              "breakdown_reviewed": "breakdown_reviewed",
+              "vendor_cancellable": "vendor_cancellable"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "35f4546169c01a60d96c57969a2afca11476bae646deb604ce9132cbe8c79521",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "81c2240efcb8684e777b93ef",
+          "role": "headcount",
+          "source": {
+            "file_hash": "b38c908162a7d275bb9186db92b5ae0ec889ed558c8627b5e19bd5412f774cfe",
+            "filename": "headcount.csv",
+            "sheet": "CSV",
+            "row": 12,
+            "columns": {
+              "employee_id": "employee_id",
+              "month": "month",
+              "department": "department",
+              "fte": "fte",
+              "amount": "amount",
+              "kind": "kind",
+              "currency": "currency"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "2400aa236f0856e9e049815c68a014cc15c32b676b615a17eeececa28d549dd2",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "98f86f40aae44b4a96fde3e6",
+          "role": "cash",
+          "source": {
+            "file_hash": "40b17c87e0ec3e2f69c8477dc88ea645331580300854f5589e76d928a9081250",
+            "filename": "cash.csv",
+            "sheet": "CSV",
+            "row": 3,
+            "columns": {
+              "month": "month",
+              "opening_cash": "opening_cash",
+              "receipts": "receipts",
+              "payments": "payments",
+              "currency": "currency",
+              "recurring_vendor": "recurring_vendor",
+              "existing_payroll": "existing_payroll",
+              "other_operating": "other_operating",
+              "taxes": "taxes",
+              "capex": "capex",
+              "debt_service": "debt_service",
+              "scheduled_invoices": "scheduled_invoices",
+              "planned_hires": "planned_hires",
+              "breakdown_reviewed": "breakdown_reviewed",
+              "vendor_cancellable": "vendor_cancellable"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "35f4546169c01a60d96c57969a2afca11476bae646deb604ce9132cbe8c79521",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "9e2d1e5f75860dc4cecf8afd",
+          "role": "budgets",
+          "source": {
+            "file_hash": "a6856c54bdc82e127021326bfb542927e7322545090f29f95c6a284be1b04f35",
+            "filename": "budgets.csv",
+            "sheet": "CSV",
+            "row": 23,
+            "columns": {
+              "month": "month",
+              "department": "department",
+              "account": "account",
+              "amount": "amount",
+              "budget_version": "budget_version",
+              "currency": "currency"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "1634a5245c80db39a0850508e270b531b055ac1245f945116bfcb3fb1ca6d6d6",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "a07ce8872603098a5df94222",
+          "role": "actuals",
+          "source": {
+            "file_hash": "89083ff9b209e00cc032b8183760ab87d274fbdbb539d8b7532e82b4f156e7de",
+            "filename": "actuals.csv",
+            "sheet": "CSV",
+            "row": 25,
+            "columns": {
+              "journal_id": "journal_id",
+              "line_id": "line_id",
+              "date": "date",
+              "department": "department",
+              "account": "account",
+              "amount": "amount",
+              "currency": "currency",
+              "description": "description",
+              "vendor": "vendor"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "2abeb79557fce6965cf998abdf0d23a3eca766238550f776c0cf04a6d6c19ecd",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "a3002869df8ff2f38d2b1e42",
+          "role": "allocations",
+          "source": {
+            "file_hash": "95378f16aa235f65821efab7d2417a5393e63206845653dda68163125f1f96c8",
+            "filename": "allocations.csv",
+            "sheet": "CSV",
+            "row": 18,
+            "columns": {
+              "invoice_id": "invoice_id",
+              "journal_id": "journal_id",
+              "line_id": "line_id",
+              "amount": "amount",
+              "currency": "currency"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "4d15dac3abbbadf778d626faeebe71d87c2061621c173d9e3c361ca55bb2a93d",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "c4f18e0e58c905d1cd4fbbae",
+          "role": "cash",
+          "source": {
+            "file_hash": "40b17c87e0ec3e2f69c8477dc88ea645331580300854f5589e76d928a9081250",
+            "filename": "cash.csv",
+            "sheet": "CSV",
+            "row": 11,
+            "columns": {
+              "month": "month",
+              "opening_cash": "opening_cash",
+              "receipts": "receipts",
+              "payments": "payments",
+              "currency": "currency",
+              "recurring_vendor": "recurring_vendor",
+              "existing_payroll": "existing_payroll",
+              "other_operating": "other_operating",
+              "taxes": "taxes",
+              "capex": "capex",
+              "debt_service": "debt_service",
+              "scheduled_invoices": "scheduled_invoices",
+              "planned_hires": "planned_hires",
+              "breakdown_reviewed": "breakdown_reviewed",
+              "vendor_cancellable": "vendor_cancellable"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "35f4546169c01a60d96c57969a2afca11476bae646deb604ce9132cbe8c79521",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "d19617498c453fb659393c19",
+          "role": "cash",
+          "source": {
+            "file_hash": "40b17c87e0ec3e2f69c8477dc88ea645331580300854f5589e76d928a9081250",
+            "filename": "cash.csv",
+            "sheet": "CSV",
+            "row": 8,
+            "columns": {
+              "month": "month",
+              "opening_cash": "opening_cash",
+              "receipts": "receipts",
+              "payments": "payments",
+              "currency": "currency",
+              "recurring_vendor": "recurring_vendor",
+              "existing_payroll": "existing_payroll",
+              "other_operating": "other_operating",
+              "taxes": "taxes",
+              "capex": "capex",
+              "debt_service": "debt_service",
+              "scheduled_invoices": "scheduled_invoices",
+              "planned_hires": "planned_hires",
+              "breakdown_reviewed": "breakdown_reviewed",
+              "vendor_cancellable": "vendor_cancellable"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "35f4546169c01a60d96c57969a2afca11476bae646deb604ce9132cbe8c79521",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "e0980e98dd8d15a6bcf0b711",
+          "role": "budgets",
+          "source": {
+            "file_hash": "a6856c54bdc82e127021326bfb542927e7322545090f29f95c6a284be1b04f35",
+            "filename": "budgets.csv",
+            "sheet": "CSV",
+            "row": 25,
+            "columns": {
+              "month": "month",
+              "department": "department",
+              "account": "account",
+              "amount": "amount",
+              "budget_version": "budget_version",
+              "currency": "currency"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "1634a5245c80db39a0850508e270b531b055ac1245f945116bfcb3fb1ca6d6d6",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "ec621e3a16ec77b57527c398",
+          "role": "invoices",
+          "source": {
+            "file_hash": "2986c1424d822914adca9b1d1660d20ae1cac1dee012a4ab62e94f882c2f3471",
+            "filename": "invoices.csv",
+            "sheet": "CSV",
+            "row": 18,
+            "columns": {
+              "invoice_id": "invoice_id",
+              "date": "date",
+              "vendor": "vendor",
+              "amount": "amount",
+              "currency": "currency",
+              "description": "description",
+              "variance_amount": "variance_amount",
+              "variance_label": "variance_label",
+              "evidence_reviewed": "evidence_reviewed"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "a2f6585f2437cb7571555c0e3c8bdf0725ccb39f06a5f7ed6cf50e78f2193fa7",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "ed43f735e50f9c987185ec90",
+          "role": "cash",
+          "source": {
+            "file_hash": "40b17c87e0ec3e2f69c8477dc88ea645331580300854f5589e76d928a9081250",
+            "filename": "cash.csv",
+            "sheet": "CSV",
+            "row": 4,
+            "columns": {
+              "month": "month",
+              "opening_cash": "opening_cash",
+              "receipts": "receipts",
+              "payments": "payments",
+              "currency": "currency",
+              "recurring_vendor": "recurring_vendor",
+              "existing_payroll": "existing_payroll",
+              "other_operating": "other_operating",
+              "taxes": "taxes",
+              "capex": "capex",
+              "debt_service": "debt_service",
+              "scheduled_invoices": "scheduled_invoices",
+              "planned_hires": "planned_hires",
+              "breakdown_reviewed": "breakdown_reviewed",
+              "vendor_cancellable": "vendor_cancellable"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "35f4546169c01a60d96c57969a2afca11476bae646deb604ce9132cbe8c79521",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "edd9d963499709c6484f3106",
+          "role": "headcount",
+          "source": {
+            "file_hash": "b38c908162a7d275bb9186db92b5ae0ec889ed558c8627b5e19bd5412f774cfe",
+            "filename": "headcount.csv",
+            "sheet": "CSV",
+            "row": 13,
+            "columns": {
+              "employee_id": "employee_id",
+              "month": "month",
+              "department": "department",
+              "fte": "fte",
+              "amount": "amount",
+              "kind": "kind",
+              "currency": "currency"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "2400aa236f0856e9e049815c68a014cc15c32b676b615a17eeececa28d549dd2",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "f01db783ebb44a05b80a42b6",
+          "role": "planned_positions",
+          "source": {
+            "file_hash": "87c4e7b917ea441a85b94ed788da50d972e9aa7ec665b6fa177222b282dc6db0",
+            "filename": "planned_positions.csv",
+            "sheet": "CSV",
+            "row": 2,
+            "columns": {
+              "position_id": "position_id",
+              "department": "department",
+              "start_date": "start_date",
+              "amount": "amount",
+              "committed": "committed",
+              "currency": "currency"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "fee98b0b753313151a4db1431c2326005cd149bca4734c1b0550917788084604",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "f273ad738463e6875fa3d072",
+          "role": "units_rates",
+          "source": {
+            "file_hash": "fa98be1fca6a556fee138c4338b99cbf40140cbefcd122f5d03a7453bf113119",
+            "filename": "units_rates.csv",
+            "sheet": "CSV",
+            "row": 13,
+            "columns": {
+              "month": "month",
+              "department": "department",
+              "account": "account",
+              "units": "units",
+              "rate": "rate",
+              "kind": "kind",
+              "currency": "currency",
+              "unit": "unit"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "4cea27a3c422c6db256f8a45f78f728c9b07163e64bd3804ae861a24d09aaa95",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        },
+        {
+          "id": "fea0f0cdb12cb17624ce8617",
+          "role": "cash",
+          "source": {
+            "file_hash": "40b17c87e0ec3e2f69c8477dc88ea645331580300854f5589e76d928a9081250",
+            "filename": "cash.csv",
+            "sheet": "CSV",
+            "row": 5,
+            "columns": {
+              "month": "month",
+              "opening_cash": "opening_cash",
+              "receipts": "receipts",
+              "payments": "payments",
+              "currency": "currency",
+              "recurring_vendor": "recurring_vendor",
+              "existing_payroll": "existing_payroll",
+              "other_operating": "other_operating",
+              "taxes": "taxes",
+              "capex": "capex",
+              "debt_service": "debt_service",
+              "scheduled_invoices": "scheduled_invoices",
+              "planned_hires": "planned_hires",
+              "breakdown_reviewed": "breakdown_reviewed",
+              "vendor_cancellable": "vendor_cancellable"
+            },
+            "wide_months": {},
+            "parser_version": "trabo-parser-1.0",
+            "mapping_version": "35f4546169c01a60d96c57969a2afca11476bae646deb604ce9132cbe8c79521",
+            "workspace": "demo",
+            "entity": "ACME-IN"
+          }
+        }
+      ],
+      "calculation_versions": {
+        "analysis": "trabo-analysis-2.1",
+        "scenario": "trabo-scenario-2.1",
+        "report": "trabo-report-render-1.0"
+      },
+      "reference": false
+    },
+    "document": {
+      "schema_version": "trabo-report-1",
+      "snapshot_id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+      "period": "2026-11",
+      "amount_unit": "INR paise",
+      "sections": [
+        {
+          "key": "executive",
+          "commentary": "",
+          "claims": [
+            {
+              "template": "summary",
+              "reference_id": "summary",
+              "period": "2026-11",
+              "amount_unit": "INR paise",
+              "direction": "adverse",
+              "evidence_state": "verified_arithmetic",
+              "wording": "standard",
+              "amount_minor": null,
+              "percentage": null
+            },
+            {
+              "template": "coverage",
+              "reference_id": "coverage",
+              "period": "2026-11",
+              "amount_unit": "INR paise",
+              "direction": "not_applicable",
+              "evidence_state": "verified_arithmetic",
+              "wording": "standard",
+              "amount_minor": null,
+              "percentage": null
+            }
+          ]
+        },
+        {
+          "key": "comparison",
+          "commentary": "",
+          "claims": [
+            {
+              "template": "movement",
+              "reference_id": "42a5bdd6f1030a9d6c53c85f3470b07c79abc52370a50394d2b63ef02c11e2da",
+              "period": "2026-11",
+              "amount_unit": "INR paise",
+              "direction": "adverse",
+              "evidence_state": "verified_arithmetic",
+              "wording": "standard",
+              "amount_minor": null,
+              "percentage": null
+            },
+            {
+              "template": "movement",
+              "reference_id": "01a5742f601b69d3e4662093a8d8734bba88260f0c1de9d062f8a6ee8bcd1c60",
+              "period": "2026-11",
+              "amount_unit": "INR paise",
+              "direction": "adverse",
+              "evidence_state": "verified_arithmetic",
+              "wording": "standard",
+              "amount_minor": null,
+              "percentage": null
+            },
+            {
+              "template": "movement",
+              "reference_id": "4c47d1ad39b9472ceb1f246358d4deb7e4640b2258a61534fa9e560218f6347d",
+              "period": "2026-11",
+              "amount_unit": "INR paise",
+              "direction": "adverse",
+              "evidence_state": "verified_arithmetic",
+              "wording": "standard",
+              "amount_minor": null,
+              "percentage": null
+            }
+          ]
+        },
+        {
+          "key": "movements",
+          "commentary": "",
+          "claims": [
+            {
+              "template": "driver",
+              "reference_id": "4908f306e57c4f9e82e7ee7d94e340190ccb9876a9ef8bfb08338c2cfd0c95c6",
+              "period": "2026-11",
+              "amount_unit": "INR paise",
+              "direction": "adverse",
+              "evidence_state": "supported",
+              "wording": "standard",
+              "amount_minor": null,
+              "percentage": null
+            },
+            {
+              "template": "driver",
+              "reference_id": "10dfc5c89f96ee1fb16e228760154f59f7f53defd7f44b278448ca72b2f355bd",
+              "period": "2026-11",
+              "amount_unit": "INR paise",
+              "direction": "adverse",
+              "evidence_state": "supported",
+              "wording": "standard",
+              "amount_minor": null,
+              "percentage": null
+            },
+            {
+              "template": "driver",
+              "reference_id": "c3881c072bc7a33af453e8f29fa23538d1946f3de34beed00d8989f11dbd5d98",
+              "period": "2026-11",
+              "amount_unit": "INR paise",
+              "direction": "adverse",
+              "evidence_state": "supported",
+              "wording": "standard",
+              "amount_minor": null,
+              "percentage": null
+            },
+            {
+              "template": "driver",
+              "reference_id": "6e898a3f4728d761504c2f06571bfa43f963e3385e2a490cfd65fc0a7110a96b",
+              "period": "2026-11",
+              "amount_unit": "INR paise",
+              "direction": "adverse",
+              "evidence_state": "supported",
+              "wording": "standard",
+              "amount_minor": null,
+              "percentage": null
+            }
+          ]
+        },
+        {
+          "key": "unknowns",
+          "commentary": "",
+          "claims": [
+            {
+              "template": "unknown",
+              "reference_id": "unknown_total",
+              "period": "2026-11",
+              "amount_unit": "INR paise",
+              "direction": "not_applicable",
+              "evidence_state": "unknown",
+              "wording": "standard",
+              "amount_minor": null,
+              "percentage": null
+            },
+            {
+              "template": "unknown",
+              "reference_id": "5b4d5ffcfe6fd9a6f8b40668c635a5e8f0469303cfcb95da2806a2d89e31ae7f",
+              "period": "2026-11",
+              "amount_unit": "INR paise",
+              "direction": "adverse",
+              "evidence_state": "unknown",
+              "wording": "standard",
+              "amount_minor": null,
+              "percentage": null
+            }
+          ]
+        },
+        {
+          "key": "cash",
+          "commentary": "",
+          "claims": [
+            {
+              "template": "cash",
+              "reference_id": "cash_baseline",
+              "period": "2026-11",
+              "amount_unit": "INR paise",
+              "direction": "not_applicable",
+              "evidence_state": "modeled",
+              "wording": "standard",
+              "amount_minor": null,
+              "percentage": null
+            },
+            {
+              "template": "cash",
+              "reference_id": "1cfab6815392ff349d448d66d8f89aff8f65a1d249fe1995001482a6c9af27e2",
+              "period": "2026-11",
+              "amount_unit": "INR paise",
+              "direction": "not_applicable",
+              "evidence_state": "modeled",
+              "wording": "standard",
+              "amount_minor": null,
+              "percentage": null
+            },
+            {
+              "template": "assumptions",
+              "reference_id": "assumptions",
+              "period": "2026-11",
+              "amount_unit": "INR paise",
+              "direction": "not_applicable",
+              "evidence_state": "modeled",
+              "wording": "standard",
+              "amount_minor": null,
+              "percentage": null
+            }
+          ]
+        },
+        {
+          "key": "actions",
+          "commentary": "",
+          "claims": []
+        },
+        {
+          "key": "evidence",
+          "commentary": "",
+          "claims": [
+            {
+              "template": "scope",
+              "reference_id": "scope",
+              "period": "2026-11",
+              "amount_unit": "INR paise",
+              "direction": "not_applicable",
+              "evidence_state": "verified_arithmetic",
+              "wording": "standard",
+              "amount_minor": null,
+              "percentage": null
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "reference_id": "5b4d5ffcfe6fd9a6f8b40668c635a5e8f0469303cfcb95da2806a2d89e31ae7f",
+          "instruction": "Review the supporting records and document any remaining explanation.",
+          "owner": "Synthetic finance review team"
+        }
+      ],
+      "questions": [
+        {
+          "reference_id": "unknown_total",
+          "text": "What additional source support is needed to explain the remaining movement?"
+        }
+      ]
+    },
+    "generation": {
+      "id": "4881c939415d4860b71f4a3fe056169e",
+      "packet_hash": "7cde05766246c359dda7970469a4ca3d9950dc9556e2716d10a97c4340beadd2",
+      "prompt_version": "trabo-grounded-report-1.0",
+      "generation_version": "trabo-report-generation-1.0",
+      "render_version": "trabo-report-render-1.0",
+      "model": "openai/gpt-oss-120b",
+      "created_at": "2026-11-21T20:05:40.780478+00:00",
+      "attempts": [],
+      "token_use": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "mode": "template",
+      "reason": "requested_template",
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          {
+            "code": "owners",
+            "message": "Assign an owner to each proposed action before approval (1 remaining)."
+          }
+        ],
+        "traceability_percentage": 100.0,
+        "linked_claims": 15,
+        "total_claims": 15,
+        "unassigned_actions": 1,
+        "requires_human_review": true
+      },
+      "latency_ms": 2.29
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": [],
+      "traceability_percentage": 100.0,
+      "linked_claims": 15,
+      "total_claims": 15,
+      "unassigned_actions": 0,
+      "requires_human_review": true
+    },
+    "approval": {
+      "reviewer": "synthetic-reviewer@trabo.local",
+      "approved_at": "2026-11-21T20:05:41.180058+00:00",
+      "report_id": "d8bdff66d36d49d9a0cc4c73caeb04fb",
+      "revision": 2,
+      "snapshot_id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+      "packet_hash": "7cde05766246c359dda7970469a4ca3d9950dc9556e2716d10a97c4340beadd2",
+      "comment": "Synthetic automated acceptance demonstration only. Figures, source links, unknowns, and timing assumptions are asserted by the test harness; this is not a real-company financial approval.",
+      "attestations": {
+        "meaning_reviewed": true,
+        "unknowns_acknowledged": true,
+        "support_warnings_reviewed": true,
+        "assumptions_reviewed": true
+      }
+    },
+    "synthetic": false
+  }
+}

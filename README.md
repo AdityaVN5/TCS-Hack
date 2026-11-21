@@ -1,12 +1,12 @@
 # TRABO
 
-A React + TypeScript and FastAPI implementation of **Phase 1: Reliable data foundation** and **Phase 2: Financial analysis and scenarios** from `BoardTrace_Three_Phase_Build_Plan.pdf`. The interface combines a Notion-inspired sidebar and document workspace with restrained Apple-style typography, pale surfaces, and rounded controls.
+A React + TypeScript and FastAPI implementation of all three phases: **reliable data**, **financial analysis and scenarios**, and **reviewed reports and delivery** from `BoardTrace_Three_Phase_Build_Plan.pdf`. The interface combines a Notion-inspired sidebar and document workspace with restrained Apple-style typography, pale surfaces, and rounded controls.
 
 ## Run locally (Windows / PowerShell)
 
 ```powershell
 python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r backend/requirements.txt
+.\.venv\Scripts\python.exe -m pip install -r backend/requirements.lock
 cd frontend
 npm.cmd ci
 cd ..
@@ -15,7 +15,7 @@ python run.py
 
 Open **http://127.0.0.1:5173**. API documentation: **http://127.0.0.1:8000/docs**.
 
-Open **http://127.0.0.1:5173/#guide** for the dedicated **How it works** page. It explains what TRABO does, the seven steps from workspace setup to a saved scenario, the files to prepare, and the scope of optional AI guidance. Each step links directly to its screen. The guide is also available from the sidebar and mobile navigation.
+Open **http://127.0.0.1:5173/#guide** for the dedicated **How it works** page. It explains what TRABO does, the nine steps from workspace setup to an approved report pack, the files to prepare, and the scope of optional AI guidance. Each step links directly to its screen. The guide is also available from the sidebar and mobile navigation.
 
 The interface uses a native Apple-style system font stack, neutral surfaces, and a shared type/spacing hierarchy. The workspace leads with one next action. Optional mappings, source previews, detailed filters, transaction lists, owner notes, control totals, and monthly cash schedules expand on demand. Financial calculations, evidence access, and source controls retain their existing behavior. Each screen has a reloadable hash link and a descriptive browser title.
 
@@ -84,7 +84,7 @@ Full required/optional field contracts live in `backend/contracts.py` and the in
 ## Verification
 
 ```powershell
-.\.venv\Scripts\python.exe -m pytest backend/test_phase1.py -q --basetemp=artifacts/pytest-local -p no:cacheprovider
+.\.venv\Scripts\python.exe -m pytest backend -q --basetemp=artifacts/pytest-local -p no:cacheprovider
 cd frontend
 npm.cmd run build
 # With all three services running, Chrome installed, and demo inputs reset:
@@ -97,11 +97,11 @@ The backend acceptance tests cover golden totals, exact controls, clean imports,
 
 The supplied roadmap references a separate 29-page source document that was not supplied. Contracts and API routes are explicitly defined here to fill that gap. This is a local, single-company prototype with a basic password-authenticated workspace, not a production identity or accounting system. Registering users, enterprise SSO, deployment hardening, and operational monitoring are outside this build.
 
-Phase 3 Report Studio, narrative generation, approval, and report export remain unavailable. The roadmap's timing targets have not been benchmarked or claimed. Source descriptions are inert strings. Optional Groq investigation guidance is isolated from financial calculations and does not create reviewed reports.
+All three phases are implemented. Source descriptions remain inert strings. Optional Groq guidance and report drafting cannot change calculations or approve a report. The deterministic reporting path works without a provider key. Release measurements, synthetic examples, and the remaining external verification limits are recorded below.
 
 ## Phase 2: Analysis and scenarios
 
-Select **Financial overview**, **Variance Explorer**, or **Scenario Lab** in the sidebar (on mobile, select **Analyze**). All three screens use a selected immutable snapshot; draft uploads never silently change a calculation. The snapshot picker identifies reference closes. Data completeness, explanation coverage, and Phase 3 report review are displayed separately.
+Select **Financial overview**, **Variance Explorer**, or **Scenario Lab** in the sidebar (on mobile, select **Analyze**). All three screens use a selected immutable snapshot; draft uploads never silently change a calculation. The snapshot picker identifies reference closes. Data completeness, explanation coverage, and report review status are displayed separately.
 
 **Create reference close** builds the updated clean fixtures through the Phase 1 pipeline in an isolated temporary workflow, then adds the sealed result to your workspace. Your active uploads, mappings, corrections, validation, and jobs stay unchanged. Repeated creation reuses the same content identity. Older snapshots remain available and do not acquire new supporting detail retrospectively.
 
@@ -171,7 +171,7 @@ All routes require the existing workspace session:
 | `GET /api/phase2/snapshots/{id}/packet` | Versioned fact/driver/scenario handoff for Phase 3 |
 | `POST /api/phase2/snapshots/{id}/investigate` | Stream optional unverified Groq guidance |
 
-API money fields ending `_minor` are integer INR paise. Vendor reductions use basis points (`2000` means 20%). Filters, materiality thresholds, and scenario models are documented in `/docs`. The evidence packet keeps baseline facts, supported attribution, owner notes, unknowns, and saved modeled outcomes distinct; it does not generate a report.
+API money fields ending `_minor` are integer INR paise. Vendor reductions use basis points (`2000` means 20%). Filters, materiality thresholds, and scenario models are documented in `/docs`. The evidence packet keeps baseline facts, supported attribution, owner notes, unknowns, and saved modeled outcomes distinct; it supplies the evidence used by Report Studio.
 
 ```powershell
 .\.venv\Scripts\python.exe -m pytest backend/test_phase1.py backend/test_phase2.py -q --basetemp=artifacts/pytest-local-phases12 -p no:cacheprovider
@@ -183,3 +183,118 @@ node check-refinement.mjs
 ```
 
 The browser check creates/reuses a reference close, verifies preservation of the current draft, inspects cloud usage evidence, reproduces ₹33 lakh scenario cash, saves a plan, opens assumptions, and checks desktop/mobile layouts. Screenshots and results are saved as `artifacts/phase2-*.png` and `artifacts/phase2-browser.json`.
+
+
+## Phase 3: Report Studio and approval
+
+Open **Report Studio** at [/#reports](http://127.0.0.1:5173/#reports). Choose a sealed close, comparison period and scope, and optionally one saved scenario. Generate a draft, inspect its linked figures, and assign an owner to each proposed action. The seven-section outline covers the executive overview, comparison, material movements, unknowns, cash assumptions, actions, and evidence appendix. The editor and preview share the same evidence checks.
+
+Every numerical sentence binds to a stored fact or scenario result. Server templates render amounts and percentages from integer-paise values. Edited figures, period, direction, unit, references, evidence state, mandatory disclosures, unsupported causal text, and unbound financial prose are revalidated. Invalid edits may be saved as a draft for correction but cannot enter review. The golden report retains the **INR 180,000 adverse variance**, **INR 10,000 unexplained amount**, and selected **INR 3,300,000 modeled closing cash**.
+
+The Groq adapter requests structured JSON using `openai/gpt-oss-120b`. Report generation uses a non-streaming schema response; the Phase 2 investigation panel retains the supplied streaming wrapper. A semantic failure permits one repair attempt. Unavailable or invalid provider output falls back to a deterministic template. Each draft displays its actual **fresh**, **cached**, or **template** mode. Packet/configuration hashes, prompt and engine versions, validation results, token use, attempts, and latency are persisted. Only exact packet/configuration matches reuse cached provider drafts. Failed worker jobs expose a retry action; restart recovery requeues interrupted jobs.
+
+Report settings can be added to the root `.env` without changing the investigation settings:
+
+```dotenv
+GROQ_REPORT_TEMPERATURE=0
+GROQ_REPORT_MAX_COMPLETION_TOKENS=8192
+```
+
+After assigning action owners, select **Send for review**, then **Review and approve**. Approval requires an explicit decision and four unchecked-by-default attestations covering meaning, unknowns, support warnings, and assumptions. The API checks the exact report revision and source snapshot. Automated traceability is not a financial-meaning approval.
+
+Changes to source files, mappings, corrections, workspace policies, included owner notes, selected scenario assumptions, or the current reconciled snapshot make dependent reports stale. A new report revision returns to draft and must be reviewed again. Reference demo closes are deliberately separate from active draft uploads. Previous approvals retain their original packet, rendered content, decision, reviewer, time, and payload hash.
+
+Open **Approved packs** at [/#approved](http://127.0.0.1:5173/#approved) for the frozen preview and PDF, financial CSV, and JSON downloads. Stale approvals are visibly historical and cannot be exported as current. Explicit historical exports remain available. The UI decodes an authenticated base64 download envelope to preserve exact file bytes across browser PDF handlers; normal binary API downloads remain available. Exports never call Groq; repeated PDF exports from the same approved payload are byte-identical. PDF text is escaped and spreadsheet formula-like text is neutralized while signed financial cells remain numeric.
+
+### Report APIs
+
+All routes require an authenticated workspace session. `/docs` includes request schemas and conflict responses.
+
+| Route | Purpose |
+| --- | --- |
+| `GET/POST /api/reports` | List reports or queue a frozen-packet draft |
+| `GET /api/reports/approved` | Current and historical approved packs |
+| `GET /api/reports/status/{snapshot_id}` | Report review state for a snapshot |
+| `GET /api/reports/{id}` | Current head, checks, and revision history |
+| `GET /api/reports/{id}/versions/{revision}` | Read a preserved revision |
+| `GET /api/reports/{id}/packet` | Read the exact evidence packet |
+| `GET /api/reports/{id}/evidence/{reference}` | Paginated claim inputs and original sources |
+| `PUT /api/reports/{id}` | Save an edited draft revision |
+| `POST /api/reports/{id}/regenerate` | Queue a new revision using selected current data |
+| `POST /api/reports/{id}/submit` | Submit a valid, owned draft for review |
+| `POST /api/reports/{id}/approve` | Approve the exact reviewed revision and snapshot |
+| `GET /api/reports/{id}/export/{pdf\|csv\|json}` | Export a current approved pack |
+| `GET /api/reports/{id}/versions/{revision}/export/{format}?historical=true` | Explicitly export a preserved approval |
+| `POST /api/jobs/{id}/retry` | Retry a failed persisted job |
+| `GET /api/health` | API liveness and worker heartbeat status |
+
+## Packaged runtime
+
+The multi-stage Dockerfile builds React and serves it from FastAPI. Compose runs the web/API and one separate worker against a shared persistent `trabo-data` volume, with health checks and restart policies. Backend transitive dependencies are pinned in `backend/requirements.lock`; frontend dependencies are pinned in `frontend/package-lock.json`.
+
+```powershell
+docker compose up --build
+# Open http://127.0.0.1:8000
+docker compose logs -f web worker
+docker compose down
+```
+
+`docker compose down` preserves the volume. Reset draft inputs through the in-app command when rehearsing; retain the volume to preserve approval and source history. Set initial account credentials before first startup and keep keys server-side. Compose binds the local demo to loopback. Docker is not installed on the build machine, so container execution remains unverified; local API, worker, built frontend, and health endpoints were exercised.
+
+## Release checks and handoff artifacts
+
+```powershell
+# Complete backend acceptance suite (isolated test data):
+.\.venv\Scripts\python.exe -m pytest backend -q --basetemp=artifacts/pytest-release -p no:cacheprovider
+# Synthetic release packet, approval, exports, corpus, and benchmarks:
+.\.venv\Scripts\python.exe backend/release_verify.py
+cd frontend
+npm.cmd run build
+# With the normal local services running:
+node check-phase2.mjs
+node check-refinement.mjs
+```
+
+The backend suite passes **37 tests**, including the Phase 1 import controls, Phase 2 exact attribution and scenario invariants, and Phase 3 review, staleness, workspace isolation, escaping, repair/cache/fallback, failed-job retry, and immutable exports. One third-party Starlette/AnyIO deprecation warning remains. The offline narrative corpus contains **30 labeled cases**; all match their expected valid/invalid outcome. These are validator checks, not evidence of model quality improvement.
+
+For a full recorded browser rehearsal, use a separate empty persistent data directory for the API and worker so your working close is preserved. Run these in separate project-root terminals:
+
+```powershell
+# Terminal 1:
+$env:TRABO_DATA = Join-Path (Get-Location) 'artifacts/release/browser-data/rehearsal'
+.\.venv\Scripts\python.exe -m uvicorn main:app --app-dir backend --host 127.0.0.1 --port 8001
+# Terminal 2 (same directory setting):
+$env:TRABO_DATA = Join-Path (Get-Location) 'artifacts/release/browser-data/rehearsal'
+.\.venv\Scripts\python.exe backend/worker.py
+# Terminal 3:
+cd frontend
+node check-complete.mjs
+```
+
+Chrome and Playwright's recording helper are required (`npx.cmd playwright install ffmpeg` from `frontend`). `check-complete.mjs` defaults to port 8001; `TRABO_BASE_URL` overrides it. It uploads the defective CSV collection, resolves issues including the genuinely missing budget, seals the close, inspects evidence, saves the timing-aware scenario, assigns owners, exercises the explicit synthetic approval form, downloads the exact PDF, and verifies stale blocking and preserved history. The run also checks mobile overflow and browser page errors. It simulates review of synthetic fixtures only.
+
+Release files are under [`artifacts/release/`](artifacts/release/):
+
+- [Approved sample PDF](artifacts/release/approved-sample.pdf), [financial CSV](artifacts/release/approved-financial-tables.csv), and [frozen payload](artifacts/release/approved-payload.json).
+- [Snapshot manifest](artifacts/release/snapshot-manifest.json), [verification results](artifacts/release/verification.json), and [timing measurements](artifacts/release/timings.json).
+- [30 labeled cases](artifacts/release/narrative-cases.json) and [validator outcomes](artifacts/release/narrative-evaluation.json).
+- [Test results](artifacts/release/test-results.json), [browser results](artifacts/release/browser-complete.json), and `complete-*.png` screenshots. The [backup recording](artifacts/release/demo-recording.webm) and `complete-demo-trace.zip` remain local and are ignored by Git.
+
+The timing JSON records actual local `time.perf_counter` measurements. Ingestion includes parsing, persistence, mappings, validation, and Parquet publication; its warm measurement uses a second isolated workspace in the same process. Draft timings measure templates with no provider request. These are local observations rather than production guarantees. The table is the final run with browser/test workloads stopped. An earlier concurrent-load run missed cold dashboard (838.25 ms) and warm ingestion (14,174.03 ms) targets; it remains in `timings-concurrent-load.json`. The original row-by-row publication measurements (about 33 seconds for 10,000 rows) remain in `timings-before-bulk-copy.json`.
+
+| Operation | Cold | Warm | Target |
+| --- | ---: | ---: | ---: |
+| 10,000-row ingestion | 1772.66 ms | 2008.13 ms | <10 s |
+| Dashboard | 143.91 ms | 6.68 ms | <500 ms |
+| Scenario | 34.94 ms | 40.06 ms | <300 ms |
+| Template draft | 41.65 ms | 37.81 ms | <20 s |
+| Approved PDF | 73.2 ms | 62.73 ms | <10 s |
+
+A separate raw-spreadsheet-versus-constrained Groq evaluation harness records invalid figures, omissions, causal text, latency, token usage, and fallback mode for the same 30 synthetic cases:
+
+```powershell
+# Requires your configured key; makes provider requests:
+.\.venv\Scripts\python.exe backend/evaluate_live.py --live --cases 30
+```
+
+The root Groq key was blank during verification. Live provider quality, live narrative latency, and model-comparison improvements have therefore **not been measured or claimed**. Offline template reporting and mocked provider repair/cache/fallback tests pass. Run the comparison after adding your key; results are written to an isolated `artifacts/release/live-evaluation/` directory.

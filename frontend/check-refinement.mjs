@@ -23,7 +23,7 @@ try{
  checks.push('Workspace has one next action and native system typography');
  await page.getByRole('navigation',{name:'Getting started'}).getByRole('button',{name:'How it works',exact:true}).click();
  await page.getByRole('heading',{name:/From spreadsheets/}).waitFor();
- if(await page.locator('.guide-step').count()!==7)throw new Error('The complete seven-step guide is missing');
+ if(await page.locator('.guide-step').count()!==9)throw new Error('The complete nine-step guide is missing');
  await page.locator('.guide-step').first().locator('summary').click();
  await page.locator('.guide-step').first().getByRole('button',{name:'Open workspace settings'}).click();
  await page.getByRole('dialog',{name:'Workspace essentials'}).waitFor();
@@ -32,7 +32,7 @@ try{
  await page.reload();
  await page.getByRole('heading',{name:/From spreadsheets/}).waitFor();
  if(!page.url().endsWith('#guide'))throw new Error('Guide direct link was not retained');
- checks.push('Dedicated guide, seven steps, settings action, and reloadable deep link');
+ checks.push('Dedicated guide, nine steps, settings action, and reloadable deep link');
  await page.getByRole('button',{name:'Start with your files',exact:true}).click();
  await page.getByRole('heading',{name:'Source files.',exact:true}).waitFor();
  if(await page.locator('.demo-card').evaluate(el=>el.open))throw new Error('Sample-data detail should begin collapsed');

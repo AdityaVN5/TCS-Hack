@@ -1,0 +1,15 @@
+{
+  "snapshot_id": "f38f581102a0b63fa20b0500f1e4be8026952adba6228740b05b320a83c72b96",
+  "report_id": "d8bdff66d36d49d9a0cc4c73caeb04fb",
+  "approved_revision": 2,
+  "payload_hash": "4f6ccd8d61359811c93393264ad8e8f363181de23f5bd58c8fa0439cb7ac85fb",
+  "golden_variance_minor": 18000000,
+  "golden_unexplained_minor": 1000000,
+  "golden_scenario_closing_minor": 330000000,
+  "narrative_cases_passed": 30,
+  "stale_export_blocked": true,
+  "historical_export_identical": true,
+  "generation_mode": "template",
+  "synthetic_only": true,
+  "data_directory": "E:\\Projects\\TCS Hack\\artifacts\\release\\runs\\88e5a83e7d22405c9d7d91d82b71877e"
+}

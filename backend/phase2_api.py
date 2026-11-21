@@ -32,7 +32,10 @@ def router_for(auth,wid):
         if threshold_minor<1 or executive_override_minor<1 or not 0<=percentage_threshold<=10000:raise HTTPException(422,'Materiality thresholds must be positive.')
         if not math.isfinite(jump_percentage) or jump_percentage<0 or jump_percentage>10000 or jump_amount_minor<1 or credit_threshold_minor<1:raise HTTPException(422,'Review thresholds must be positive.')
         value=checked(build,w,sid,period,scope,department,account,threshold_minor,percentage_threshold,executive_override_minor,jump_percentage,jump_amount_minor,credit_threshold_minor)
-        return dict(value,owner_notes=[n for n in all_items('owner_note',w) if n['snapshot_id']==sid])
+        from reports import list_reports
+        report_items=[r for r in list_reports(w) if r['snapshot_id']==sid]
+        report_status=next((r['state'] for r in report_items if r['state']=='approved'),report_items[0]['state'] if report_items else 'not_started')
+        return dict(value,owner_notes=[n for n in all_items('owner_note',w) if n['snapshot_id']==sid],report_review_status=report_status)
 
     @router.get('/snapshots/{sid}/evidence/{eid}')
     def evidence(sid:str,eid:str,offset:int=0,limit:int=20,w=Depends(wid)):
@@ -82,7 +85,7 @@ def router_for(auth,wid):
     def packet(sid:str,period:str|None=None,scope:Literal['budget','mom','cumulative']='budget',scenario_id:str|None=None,w=Depends(wid)):
         analysis=checked(build,w,sid,period,scope)
         scenario=artifact('scenario',scenario_id,sid,w) if scenario_id else None
-        return {'contract_version':'trabo-evidence-packet-1','snapshot_id':sid,'amount_unit':'INR paise','period':analysis['period'],'scope':scope,'totals':analysis['totals'],'coverage':analysis['coverage'],'facts':analysis['facts'],'drivers':analysis['drivers'],'owner_notes':[n for n in all_items('owner_note',w) if n['snapshot_id']==sid],'scenario':scenario,'report_status':'not_started_phase_3'}
+        return {'contract_version':'trabo-evidence-packet-1','snapshot_id':sid,'amount_unit':'INR paise','period':analysis['period'],'scope':scope,'totals':analysis['totals'],'coverage':analysis['coverage'],'facts':analysis['facts'],'drivers':analysis['drivers'],'owner_notes':[n for n in all_items('owner_note',w) if n['snapshot_id']==sid],'scenario':scenario,'report_status':'ready_for_report_studio'}
 
     @router.post('/snapshots/{sid}/investigate')
     def investigate(sid:str,body:Question,w=Depends(wid)):

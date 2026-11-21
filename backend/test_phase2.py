@@ -85,7 +85,7 @@ def test_golden_scenario_and_zero_identity(client,sealed):
     packet=client.get(f"/api/phase2/snapshots/{sealed}/packet?scenario_id={saved['id']}").json()
     assert packet['scenario']['assumptions_hash']==r['assumptions_hash']
     assert packet['totals']['unexplained_minor']==1000000
-    assert packet['report_status']=='not_started_phase_3'
+    assert packet['report_status']=='ready_for_report_studio'
 
 def test_partial_month_hires_and_commitment_exclusions(monkeypatch):
     month='2027-02'

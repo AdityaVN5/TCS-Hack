@@ -36,11 +36,13 @@ def input_fingerprint(wid):
 
 def validate(wid):
     policy = workspace(wid)
+    # Capture one correction revision set for the run instead of opening SQLite per row.
+    corrections={c['id']:c for c in all_items('correction',wid)}
     issues, records = [], []
     seen = set()
     def issue(code, title, detail, record=None, severity='blocker', actions=None, extra=None):
         iid = digest([code,record and record['id'],extra])[:24]
-        correction = get('correction',iid,wid)
+        correction = corrections.get(iid)
         issues.append({'id':iid,'code':code,'title':title,'detail':detail,'severity':severity,'record_id':record and record['id'],'file':record and record['source']['filename'],'row':record and record['source']['row'],'amount':record and record.get('amount',0) or 0,'actions':actions or [],'status':'resolved' if correction and correction.get('action')=='acknowledge' else 'open', 'extra':extra})
         return iid
     # Stable traversal makes duplicate selection independent of mapping save order.
@@ -53,7 +55,7 @@ def validate(wid):
             role = mapping['role']
             for rownum, raw in enumerate(sheet['rows'],2):
                 rid = digest([wid,policy['entity'],upload['hash'],sheet['name'],rownum,role])[:24]
-                base_correction = get('correction',rid,wid) or {}
+                base_correction = corrections.get(rid) or {}
                 correction = base_correction
                 data = {k:raw.get(v) for k,v in mapping['columns'].items() if v}
                 data.update(correction.get('values',{}))
@@ -62,7 +64,7 @@ def validate(wid):
                     expanded = [(month,dict(data,month=month,amount=raw.get(col))) for month,col in mapping['wide_months'].items()]
                 for wide_month, values in expanded:
                     canonical_id = digest([rid,wide_month])[:24] if wide_month else rid
-                    correction = get('correction',canonical_id,wid) or base_correction
+                    correction = corrections.get(canonical_id) or base_correction
                     values.update(correction.get('values',{}))
                     record = {'id':canonical_id,'role':role,'data':values,'amount':0,'accepted':True,'source':{'file_hash':upload['hash'],'filename':upload['name'],'sheet':sheet['name'],'row':rownum,'columns':mapping['columns'],'wide_months':mapping.get('wide_months',{}),'parser_version':PARSER_VERSION,'mapping_version':digest(mapping),'workspace':wid,'entity':policy['entity']}}
                     records.append(record)
@@ -147,7 +149,7 @@ def validate(wid):
         if key not in budgets and key not in missing:
             missing.add(key)
             iid=digest(['missing_budget',r['id'],list(key)])[:24]
-            correction=get('correction',iid,wid)
+            correction=corrections.get(iid)
             if correction and correction.get('action')=='approve_zero':
                 z={'id':iid,'role':'budgets','data':dict(zip(('month','department','account'),key),budget_version=policy['budget_version'],amount='0',approved_zero=True),'amount':0,'accepted':True,'source':dict(r['source'],correction_id=iid,origin='reviewer-approved zero budget')}
                 records.append(z)
@@ -235,13 +237,17 @@ def publish(wid,actor=None):
     rows=[r for r in result['records'] if r['accepted']]
     connection=duckdb.connect()
     temp=directory/'canonical.tmp.parquet'
+    staging=directory/'canonical.staging.ndjson'
     try:
-        connection.execute('CREATE TABLE canonical (record_id VARCHAR, role VARCHAR, amount_minor BIGINT, payload JSON)')
-        connection.executemany('INSERT INTO canonical VALUES (?,?,?,?)',[(r['id'],r['role'],r['amount'],json.dumps(r)) for r in rows])
-        connection.execute('COPY canonical TO ? (FORMAT PARQUET)',[str(temp)])
+        # Bulk JSON ingestion avoids thousands of individual Python-to-DuckDB inserts.
+        with staging.open('w',encoding='utf-8',newline='\n') as stream:
+            for r in rows:
+                stream.write(json.dumps({'record_id':r['id'],'role':r['role'],'amount_minor':r['amount'],'payload':r},separators=(',',':'))+'\n')
+        connection.read_json(str(staging),format='newline_delimited',columns={'record_id':'VARCHAR','role':'VARCHAR','amount_minor':'BIGINT','payload':'JSON'}).write_parquet(str(temp))
         os.replace(temp,directory/'canonical.parquet')
     finally:
         connection.close()
+        if staging.exists():staging.unlink()
     manifest={'id':sid,'created_at':now(),'workspace':wid,'engine_version':ENGINE_VERSION,'amount_unit':'INR paise','policy':workspace(wid),'record_count':len(rows),'totals':result['totals'],'reconciliation':result['reconciliation'],'warnings':[i for i in result['issues'] if i['severity']=='warning'],'issue_history':all_items('issue_history',wid),'inputs':[{'hash':u['hash'],'name':u['name'],'mappings':[s.get('mapping') for s in u['sheets']]} for u in all_items('upload',wid)],'corrections':all_items('correction',wid),'correction_revisions':all_items('correction_revision',wid)}
     manifest['mapping_revisions']=all_items('mapping_revision',wid)
     manifest['confirmed_by']=actor

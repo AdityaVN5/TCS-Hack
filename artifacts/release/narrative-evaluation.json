@@ -1,0 +1,459 @@
+{
+  "kind": "deterministic_validation_corpus",
+  "cases": [
+    {
+      "label": "valid_template",
+      "expected_valid": true,
+      "observed_valid": true,
+      "matched_expected": true,
+      "errors": [],
+      "latency_ms": 0.341,
+      "provider_tokens": 0
+    },
+    {
+      "label": "valid_concise",
+      "expected_valid": true,
+      "observed_valid": true,
+      "matched_expected": true,
+      "errors": [],
+      "latency_ms": 0.186,
+      "provider_tokens": 0
+    },
+    {
+      "label": "valid_review_question",
+      "expected_valid": true,
+      "observed_valid": true,
+      "matched_expected": true,
+      "errors": [],
+      "latency_ms": 0.186,
+      "provider_tokens": 0
+    },
+    {
+      "label": "valid_owner_assignment",
+      "expected_valid": true,
+      "observed_valid": true,
+      "matched_expected": true,
+      "errors": [],
+      "latency_ms": 0.17,
+      "provider_tokens": 0
+    },
+    {
+      "label": "valid_matched_amount",
+      "expected_valid": true,
+      "observed_valid": true,
+      "matched_expected": true,
+      "errors": [],
+      "latency_ms": 0.206,
+      "provider_tokens": 0
+    },
+    {
+      "label": "wrong_sign",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "amount",
+          "path": "sections.0.claims.0.amount_minor",
+          "message": "Edited figure does not equal the stored financial fact."
+        }
+      ],
+      "latency_ms": 0.171,
+      "provider_tokens": 0
+    },
+    {
+      "label": "wrong_amount",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "amount",
+          "path": "sections.0.claims.0.amount_minor",
+          "message": "Edited figure does not equal the stored financial fact."
+        }
+      ],
+      "latency_ms": 0.168,
+      "provider_tokens": 0
+    },
+    {
+      "label": "wrong_percentage",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "percentage",
+          "path": "sections.0.claims.0.percentage",
+          "message": "Edited percentage does not equal the stored financial fact."
+        }
+      ],
+      "latency_ms": 0.174,
+      "provider_tokens": 0
+    },
+    {
+      "label": "wrong_document_month",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "period",
+          "path": "period",
+          "message": "Document reporting month differs from its evidence packet."
+        }
+      ],
+      "latency_ms": 0.165,
+      "provider_tokens": 0
+    },
+    {
+      "label": "wrong_claim_month",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "period",
+          "path": "sections.0.claims.0.period",
+          "message": "Claim period does not match its bound evidence."
+        }
+      ],
+      "latency_ms": 0.164,
+      "provider_tokens": 0
+    },
+    {
+      "label": "wrong_snapshot",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "snapshot",
+          "path": "snapshot_id",
+          "message": "Document snapshot differs from its sealed evidence packet."
+        }
+      ],
+      "latency_ms": 0.163,
+      "provider_tokens": 0
+    },
+    {
+      "label": "missing_fact",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "reference",
+          "path": "sections.0.claims.0",
+          "message": "Claim reference does not exist in this snapshot, scope, and packet."
+        },
+        {
+          "code": "omission",
+          "path": "sections",
+          "message": "Required evidence or disclosure is missing: summary"
+        }
+      ],
+      "latency_ms": 0.165,
+      "provider_tokens": 0
+    },
+    {
+      "label": "wrong_direction",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "direction",
+          "path": "sections.0.claims.0.direction",
+          "message": "Claim direction does not match its bound evidence."
+        }
+      ],
+      "latency_ms": 0.167,
+      "provider_tokens": 0
+    },
+    {
+      "label": "wrong_evidence_state",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "evidence_state",
+          "path": "sections.0.claims.0.evidence_state",
+          "message": "Claim evidence_state does not match its bound evidence."
+        }
+      ],
+      "latency_ms": 0.166,
+      "provider_tokens": 0
+    },
+    {
+      "label": "wrong_unit",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "schema",
+          "path": "sections.0.claims.0.amount_unit",
+          "message": "Input should be 'INR paise'"
+        }
+      ],
+      "latency_ms": 0.154,
+      "provider_tokens": 0
+    },
+    {
+      "label": "unsupported_cause",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "unsupported_cause",
+          "path": "sections.0.commentary",
+          "message": "A causal or certain assertion needs controlled evidence-backed wording."
+        },
+        {
+          "code": "unbound_relationship",
+          "path": "sections.0.commentary",
+          "message": "Use a linked claim for financial direction, comparisons, or movements."
+        }
+      ],
+      "latency_ms": 0.216,
+      "provider_tokens": 0
+    },
+    {
+      "label": "unsupported_certainty",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "unsupported_cause",
+          "path": "sections.0.commentary",
+          "message": "A causal or certain assertion needs controlled evidence-backed wording."
+        }
+      ],
+      "latency_ms": 0.184,
+      "provider_tokens": 0
+    },
+    {
+      "label": "unsupported_fraud_claim",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "unsupported_cause",
+          "path": "sections.0.commentary",
+          "message": "A causal or certain assertion needs controlled evidence-backed wording."
+        }
+      ],
+      "latency_ms": 0.174,
+      "provider_tokens": 0
+    },
+    {
+      "label": "numeric_prose",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "unbound_claim",
+          "path": "sections.0.commentary",
+          "message": "Use a linked claim for figures, percentages, or reporting months; prose cannot introduce them."
+        }
+      ],
+      "latency_ms": 0.174,
+      "provider_tokens": 0
+    },
+    {
+      "label": "word_number_prose",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "unbound_claim",
+          "path": "sections.0.commentary",
+          "message": "Use a linked claim for figures, percentages, or reporting months; prose cannot introduce them."
+        },
+        {
+          "code": "unbound_relationship",
+          "path": "sections.0.commentary",
+          "message": "Use a linked claim for financial direction, comparisons, or movements."
+        }
+      ],
+      "latency_ms": 0.173,
+      "provider_tokens": 0
+    },
+    {
+      "label": "wrong_month_in_prose",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "unbound_claim",
+          "path": "sections.0.commentary",
+          "message": "Use a linked claim for figures, percentages, or reporting months; prose cannot introduce them."
+        }
+      ],
+      "latency_ms": 0.175,
+      "provider_tokens": 0
+    },
+    {
+      "label": "missing_unknown_disclosure",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "omission",
+          "path": "sections",
+          "message": "Required evidence or disclosure is missing: unknown_total"
+        },
+        {
+          "code": "unknown_disclosure",
+          "path": "sections.unknowns",
+          "message": "Disclose remaining unknowns in the unexplained amounts section."
+        }
+      ],
+      "latency_ms": 0.166,
+      "provider_tokens": 0
+    },
+    {
+      "label": "missing_summary",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "omission",
+          "path": "sections",
+          "message": "Required evidence or disclosure is missing: summary"
+        }
+      ],
+      "latency_ms": 0.163,
+      "provider_tokens": 0
+    },
+    {
+      "label": "missing_coverage",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "omission",
+          "path": "sections",
+          "message": "Required evidence or disclosure is missing: coverage"
+        }
+      ],
+      "latency_ms": 0.16,
+      "provider_tokens": 0
+    },
+    {
+      "label": "missing_scope",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "omission",
+          "path": "sections",
+          "message": "Required evidence or disclosure is missing: scope"
+        }
+      ],
+      "latency_ms": 0.161,
+      "provider_tokens": 0
+    },
+    {
+      "label": "missing_assumptions",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "omission",
+          "path": "sections",
+          "message": "Required evidence or disclosure is missing: assumptions"
+        }
+      ],
+      "latency_ms": 0.168,
+      "provider_tokens": 0
+    },
+    {
+      "label": "duplicate_claim",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "duplicate_claim",
+          "path": "sections.0.claims.2",
+          "message": "A contribution may be stated once; duplicate claims are not additive evidence."
+        }
+      ],
+      "latency_ms": 0.168,
+      "provider_tokens": 0
+    },
+    {
+      "label": "malicious_description",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "unbound_claim",
+          "path": "sections.0.commentary",
+          "message": "Use a linked claim for figures, percentages, or reporting months; prose cannot introduce them."
+        }
+      ],
+      "latency_ms": 0.198,
+      "provider_tokens": 0
+    },
+    {
+      "label": "malicious_reference",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "reference",
+          "path": "sections.0.claims.0",
+          "message": "Claim reference does not exist in this snapshot, scope, and packet."
+        },
+        {
+          "code": "omission",
+          "path": "sections",
+          "message": "Required evidence or disclosure is missing: summary"
+        }
+      ],
+      "latency_ms": 0.167,
+      "provider_tokens": 0
+    },
+    {
+      "label": "unreferenced_action",
+      "expected_valid": false,
+      "observed_valid": false,
+      "matched_expected": true,
+      "errors": [
+        {
+          "code": "reference",
+          "path": "actions.0",
+          "message": "Action reference is not in the packet."
+        }
+      ],
+      "latency_ms": 0.164,
+      "provider_tokens": 0
+    }
+  ],
+  "passed": 30,
+  "total": 30,
+  "raw_spreadsheet_model_baseline": {
+    "status": "not_run",
+    "reason": "Offline release verification does not call the provider. Use evaluate_live.py with a configured Groq key for the model comparison.",
+    "latency_ms": null,
+    "token_use": null
+  },
+  "quality_improvement_claim": null
+}
