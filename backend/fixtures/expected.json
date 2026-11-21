@@ -1,0 +1,15 @@
+{
+  "golden_month": "2026-11",
+  "amount_unit": "INR paise",
+  "budget": 100000000,
+  "actual": 118000000,
+  "seed": 42,
+  "defects": [
+    "department alias Engg",
+    "ambiguous date",
+    "duplicate journal key",
+    "missing budget",
+    "unmatched invoice",
+    "untrusted description"
+  ]
+}

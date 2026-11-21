@@ -1,0 +1,17 @@
+{
+  "errors": [],
+  "mobileHorizontalOverflow": false,
+  "flows": [
+    "login",
+    "demo import or existing draft",
+    "mapping confirmations",
+    "worker validation",
+    "source review",
+    "desktop workspace",
+    "mobile navigation",
+    "correction decisions",
+    "snapshot confirmation",
+    "snapshot pagination and role filter",
+    "sealed original-source download"
+  ]
+}

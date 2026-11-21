@@ -1,0 +1,13 @@
+employee_id,month,department,fte,amount,kind,currency
+EMP-001,2026-06,People,10,600000,budget,INR
+EMP-001,2026-06,People,10,600000,actual,INR
+EMP-001,2026-07,People,10,600000,budget,INR
+EMP-001,2026-07,People,10,600000,actual,INR
+EMP-001,2026-08,People,10,600000,budget,INR
+EMP-001,2026-08,People,10,600000,actual,INR
+EMP-001,2026-09,People,10,600000,budget,INR
+EMP-001,2026-09,People,10,600000,actual,INR
+EMP-001,2026-10,People,10,600000,budget,INR
+EMP-001,2026-10,People,10,600000,actual,INR
+EMP-001,2026-11,People,10,600000,budget,INR
+EMP-001,2026-11,People,10,660000,actual,INR
