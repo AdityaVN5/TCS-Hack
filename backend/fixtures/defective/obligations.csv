@@ -1,2 +1,2 @@
 obligation_id,date,amount,category,committed,currency
-OBL-001,2026-12-15,100000,vendor,true,INR
+OBL-001,2026-12-15,100000,scheduled_invoice,true,INR

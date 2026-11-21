@@ -5,6 +5,9 @@ import sqlite3
 from contextlib import contextmanager
 from pathlib import Path
 from datetime import datetime, timezone
+from dotenv import load_dotenv
+
+load_dotenv(Path(__file__).parent.parent / '.env', override=False)
 
 ROOT = Path(os.environ.get('TRABO_DATA', Path(__file__).parent / 'data'))
 

@@ -31,7 +31,7 @@ async def lifespan(app):
             c.execute('INSERT INTO users VALUES(?,?,?,?)',(email,salt,password_hash(os.getenv('TRABO_PASSWORD','trabo-demo-2026'),salt),'demo'))
     yield
 
-app=FastAPI(title='TRABO · Phase 1',lifespan=lifespan)
+app=FastAPI(title='TRABO · Phases 1 & 2',lifespan=lifespan)
 
 def auth(request:Request):
     token=request.cookies.get('trabo_session','')
@@ -269,6 +269,9 @@ def reset(w=Depends(wid)):
     # Preserve immutable raw files and sealed snapshots; reset only draft workflow state.
     for kind in ('upload','validation','correction','correction_revision','issue_history','mapping_revision','job'): clear(kind,w)
     return {'ok':True}
+
+from phase2_api import router_for
+app.include_router(router_for(auth,wid))
 
 # Optional single-origin production serving after `npm run build`.
 from fastapi.staticfiles import StaticFiles

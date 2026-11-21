@@ -116,8 +116,11 @@ def validate(wid):
                             units=Decimal(str(values['units']))
                             if not units.is_finite() or units<0: raise ValueError('Units must be finite and nonnegative.')
                         if role=='cash':
-                            for key in ('opening_cash','receipts','payments'):
+                            for key in ('opening_cash','receipts','payments','recurring_vendor','existing_payroll','other_operating','taxes','capex','debt_service','scheduled_invoices','planned_hires'):
+                                if key not in values or values[key] in (None,''): continue
                                 values[key+'_minor']=money(values[key],mapping['scale'])
+                        if role=='invoices' and values.get('variance_amount') not in (None,''):
+                            values['variance_amount_minor']=money(values['variance_amount'],mapping['scale'])
                         if role in ('planned_positions','obligations') and str(values['committed']).lower() not in ('true','false'):
                             raise ValueError('Committed must be true or false.')
                         if role=='actuals':
