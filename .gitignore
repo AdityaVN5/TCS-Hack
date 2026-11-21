@@ -12,3 +12,4 @@ test-results/
 artifacts/pytest*/
 artifacts/phase2-demo/
 *.tsbuildinfo
+.env*

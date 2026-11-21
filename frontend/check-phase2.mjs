@@ -6,7 +6,7 @@ const errors=[];page.on('pageerror',e=>errors.push(e.message));
 try{
  await page.goto('http://127.0.0.1:5173');
  await page.getByRole('button',{name:'Enter workspace'}).click();
- await page.getByRole('heading',{name:'A clearer close starts here.'}).waitFor();
+ await page.getByRole('heading',{name:/Your close/}).waitFor();
  await page.getByRole('navigation').getByRole('button',{name:'Financial overview',exact:true}).click();
  const before=await page.request.get('http://127.0.0.1:5173/api/state').then(r=>r.json());
  await Promise.all([page.waitForResponse(r=>r.url().endsWith('/api/phase2/reference')&&r.request().method()==='POST',{timeout:60000}),page.getByRole('button',{name:'Create reference close',exact:true}).click()]);

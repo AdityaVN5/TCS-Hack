@@ -15,6 +15,10 @@ python run.py
 
 Open **http://127.0.0.1:5173**. API documentation: **http://127.0.0.1:8000/docs**.
 
+Open **http://127.0.0.1:5173/#guide** for the dedicated **How it works** page. It explains what TRABO does, the seven steps from workspace setup to a saved scenario, the files to prepare, and the scope of optional AI guidance. Each step links directly to its screen. The guide is also available from the sidebar and mobile navigation.
+
+The interface uses a native Apple-style system font stack, neutral surfaces, and a shared type/spacing hierarchy. The workspace leads with one next action. Optional mappings, source previews, detailed filters, transaction lists, owner notes, control totals, and monthly cash schedules expand on demand. Financial calculations, evidence access, and source controls retain their existing behavior. Each screen has a reloadable hash link and a descriptive browser title.
+
 After `npm.cmd run build` in `frontend`, the API also serves the built interface at **http://127.0.0.1:8000** on its next startup. The worker must still run.
 
 Local demo login: `demo@trabo.local` / `trabo-demo-2026`. The form prefills these credentials. Set `TRABO_EMAIL` and `TRABO_PASSWORD` **before first startup** to provision a different local account. Existing passwords are not reset on startup. `TRABO_DATA` optionally selects a persistent data directory. Set `TRABO_SECURE_COOKIE=1` behind HTTPS.
@@ -174,6 +178,8 @@ API money fields ending `_minor` are integer INR paise. Vendor reductions use ba
 cd frontend
 npm.cmd run build
 node check-phase2.mjs
+# Check the guide, simplified controls, deep links, and desktop/tablet/mobile layout:
+node check-refinement.mjs
 ```
 
 The browser check creates/reuses a reference close, verifies preservation of the current draft, inspects cloud usage evidence, reproduces ₹33 lakh scenario cash, saves a plan, opens assumptions, and checks desktop/mobile layouts. Screenshots and results are saved as `artifacts/phase2-*.png` and `artifacts/phase2-browser.json`.
